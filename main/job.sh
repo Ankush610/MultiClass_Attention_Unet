@@ -5,8 +5,8 @@
 #SBATCH --gres=gpu:1                   # Number of GPUs on each node
 #SBATCH --cpus-per-task=20            # Number of CPU cores per task
 #SBATCH --partition=gpu                # GPU partition
-#SBATCH --output=logs_%j.out           # Output log file
-#SBATCH --error=logs_%j.err            # Error log file
+#SBATCH --output=logs/logs_%j.out           # Output log file
+#SBATCH --error=logs/logs_%j.err            # Error log file
 #SBATCH --time=24:00:00                # Time limit
 
 # -----------------------------

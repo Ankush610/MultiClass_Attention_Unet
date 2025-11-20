@@ -1,0 +1,11 @@
+/var/share/slurm/d/job238550/slurm_script: line 16: /home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorc/.venv/bin/activate: No such file or directory
+/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/albumentations/core/validation.py:114: UserWarning: ShiftScaleRotate is a special case of Affine transform. Please use Affine transform instead.
+  original_init(self, **validated_kwargs)
+/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/train.py:159: UserWarning: Argument(s) 'max_holes, max_height, max_width' are not valid for transform CoarseDropout
+  A.CoarseDropout(p=0.2, max_holes=8, max_height=24, max_width=24),
+/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/torch/optim/lr_scheduler.py:62: UserWarning: The verbose parameter is deprecated. Please use get_last_lr() to access the learning rate.
+  warnings.warn(
+/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/train.py:80: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler()
+/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/train.py:86: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():

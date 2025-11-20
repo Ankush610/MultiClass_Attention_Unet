@@ -1,0 +1,225 @@
+==========================================
+SLURM_CLUSTER_NAME = paramprabha
+SLURM_JOB_ACCOUNT = cdac
+SLURM_JOB_ID = 239355
+SLURM_JOB_NAME = av_train
+SLURM_JOB_NODELIST = rpgpu001
+SLURM_JOB_USER = omjadhav
+SLURM_JOB_UID = 52009
+SLURM_JOB_PARTITION = gpu
+SLURM_TASK_PID = 1359151
+SLURM_SUBMIT_DIR = /home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch
+SLURM_CPUS_ON_NODE = 20
+SLURM_NTASKS = 1
+SLURM_TASK_PID = 1359151
+==========================================
+Found images: 100
+Found masks : 100
+Dataset Size: Train: 60 - Valid: 20 - Test: 20
+Device: cuda
+GPU device name: NVIDIA A100 80GB PCIe
+Checkpoint loaded from epoch 257
+[258/1000] | Epoch Time: 0m 22s - Train Loss: 0.5300 - Val. Loss: 0.5374
+Checkpoint saved at epoch 258
+[259/1000] | Epoch Time: 0m 9s - Train Loss: 0.5293 - Val. Loss: 0.5380
+EarlyStopping counter: 1 of 100
+[260/1000] | Epoch Time: 0m 7s - Train Loss: 0.5264 - Val. Loss: 0.5382
+EarlyStopping counter: 2 of 100
+[261/1000] | Epoch Time: 0m 8s - Train Loss: 0.5305 - Val. Loss: 0.5388
+EarlyStopping counter: 3 of 100
+[262/1000] | Epoch Time: 0m 9s - Train Loss: 0.5307 - Val. Loss: 0.5384
+EarlyStopping counter: 4 of 100
+[263/1000] | Epoch Time: 0m 8s - Train Loss: 0.5289 - Val. Loss: 0.5386
+EarlyStopping counter: 5 of 100
+[264/1000] | Epoch Time: 0m 9s - Train Loss: 0.5292 - Val. Loss: 0.5387
+EarlyStopping counter: 6 of 100
+[265/1000] | Epoch Time: 0m 7s - Train Loss: 0.5281 - Val. Loss: 0.5393
+EarlyStopping counter: 7 of 100
+[266/1000] | Epoch Time: 0m 8s - Train Loss: 0.5293 - Val. Loss: 0.5390
+EarlyStopping counter: 8 of 100
+[267/1000] | Epoch Time: 0m 9s - Train Loss: 0.5295 - Val. Loss: 0.5388
+EarlyStopping counter: 9 of 100
+[268/1000] | Epoch Time: 0m 8s - Train Loss: 0.5296 - Val. Loss: 0.5387
+EarlyStopping counter: 10 of 100
+[269/1000] | Epoch Time: 0m 8s - Train Loss: 0.5288 - Val. Loss: 0.5388
+EarlyStopping counter: 11 of 100
+[270/1000] | Epoch Time: 0m 9s - Train Loss: 0.5304 - Val. Loss: 0.5384
+EarlyStopping counter: 12 of 100
+[271/1000] | Epoch Time: 0m 7s - Train Loss: 0.5336 - Val. Loss: 0.5387
+EarlyStopping counter: 13 of 100
+[272/1000] | Epoch Time: 0m 9s - Train Loss: 0.5304 - Val. Loss: 0.5381
+EarlyStopping counter: 14 of 100
+[273/1000] | Epoch Time: 0m 8s - Train Loss: 0.5291 - Val. Loss: 0.5382
+EarlyStopping counter: 15 of 100
+[274/1000] | Epoch Time: 0m 8s - Train Loss: 0.5280 - Val. Loss: 0.5385
+EarlyStopping counter: 16 of 100
+[275/1000] | Epoch Time: 0m 9s - Train Loss: 0.5295 - Val. Loss: 0.5386
+EarlyStopping counter: 17 of 100
+[276/1000] | Epoch Time: 0m 9s - Train Loss: 0.5279 - Val. Loss: 0.5382
+EarlyStopping counter: 18 of 100
+[277/1000] | Epoch Time: 0m 7s - Train Loss: 0.5315 - Val. Loss: 0.5387
+EarlyStopping counter: 19 of 100
+[278/1000] | Epoch Time: 0m 8s - Train Loss: 0.5304 - Val. Loss: 0.5390
+EarlyStopping counter: 20 of 100
+[279/1000] | Epoch Time: 0m 8s - Train Loss: 0.5289 - Val. Loss: 0.5390
+EarlyStopping counter: 21 of 100
+[280/1000] | Epoch Time: 0m 9s - Train Loss: 0.5292 - Val. Loss: 0.5392
+EarlyStopping counter: 22 of 100
+[281/1000] | Epoch Time: 0m 9s - Train Loss: 0.5309 - Val. Loss: 0.5390
+EarlyStopping counter: 23 of 100
+[282/1000] | Epoch Time: 0m 9s - Train Loss: 0.5318 - Val. Loss: 0.5385
+EarlyStopping counter: 24 of 100
+[283/1000] | Epoch Time: 0m 9s - Train Loss: 0.5283 - Val. Loss: 0.5386
+EarlyStopping counter: 25 of 100
+[284/1000] | Epoch Time: 0m 8s - Train Loss: 0.5305 - Val. Loss: 0.5386
+EarlyStopping counter: 26 of 100
+[285/1000] | Epoch Time: 0m 8s - Train Loss: 0.5290 - Val. Loss: 0.5388
+EarlyStopping counter: 27 of 100
+[286/1000] | Epoch Time: 0m 9s - Train Loss: 0.5320 - Val. Loss: 0.5386
+EarlyStopping counter: 28 of 100
+[287/1000] | Epoch Time: 0m 9s - Train Loss: 0.5331 - Val. Loss: 0.5384
+EarlyStopping counter: 29 of 100
+[288/1000] | Epoch Time: 0m 7s - Train Loss: 0.5278 - Val. Loss: 0.5383
+EarlyStopping counter: 30 of 100
+[289/1000] | Epoch Time: 0m 9s - Train Loss: 0.5292 - Val. Loss: 0.5382
+EarlyStopping counter: 31 of 100
+[290/1000] | Epoch Time: 0m 9s - Train Loss: 0.5313 - Val. Loss: 0.5387
+EarlyStopping counter: 32 of 100
+[291/1000] | Epoch Time: 0m 8s - Train Loss: 0.5286 - Val. Loss: 0.5385
+EarlyStopping counter: 33 of 100
+[292/1000] | Epoch Time: 0m 9s - Train Loss: 0.5306 - Val. Loss: 0.5393
+EarlyStopping counter: 34 of 100
+[293/1000] | Epoch Time: 0m 9s - Train Loss: 0.5286 - Val. Loss: 0.5386
+EarlyStopping counter: 35 of 100
+[294/1000] | Epoch Time: 0m 10s - Train Loss: 0.5288 - Val. Loss: 0.5388
+EarlyStopping counter: 36 of 100
+[295/1000] | Epoch Time: 0m 10s - Train Loss: 0.5311 - Val. Loss: 0.5384
+EarlyStopping counter: 37 of 100
+[296/1000] | Epoch Time: 0m 8s - Train Loss: 0.5293 - Val. Loss: 0.5382
+EarlyStopping counter: 38 of 100
+[297/1000] | Epoch Time: 0m 9s - Train Loss: 0.5282 - Val. Loss: 0.5386
+EarlyStopping counter: 39 of 100
+[298/1000] | Epoch Time: 0m 10s - Train Loss: 0.5284 - Val. Loss: 0.5387
+EarlyStopping counter: 40 of 100
+[299/1000] | Epoch Time: 0m 7s - Train Loss: 0.5289 - Val. Loss: 0.5383
+EarlyStopping counter: 41 of 100
+[300/1000] | Epoch Time: 0m 7s - Train Loss: 0.5286 - Val. Loss: 0.5382
+EarlyStopping counter: 42 of 100
+[301/1000] | Epoch Time: 0m 7s - Train Loss: 0.5290 - Val. Loss: 0.5392
+EarlyStopping counter: 43 of 100
+[302/1000] | Epoch Time: 0m 8s - Train Loss: 0.5312 - Val. Loss: 0.5391
+EarlyStopping counter: 44 of 100
+[303/1000] | Epoch Time: 0m 8s - Train Loss: 0.5309 - Val. Loss: 0.5383
+EarlyStopping counter: 45 of 100
+[304/1000] | Epoch Time: 0m 8s - Train Loss: 0.5287 - Val. Loss: 0.5381
+EarlyStopping counter: 46 of 100
+[305/1000] | Epoch Time: 0m 7s - Train Loss: 0.5293 - Val. Loss: 0.5384
+EarlyStopping counter: 47 of 100
+[306/1000] | Epoch Time: 0m 11s - Train Loss: 0.5326 - Val. Loss: 0.5383
+EarlyStopping counter: 48 of 100
+[307/1000] | Epoch Time: 0m 10s - Train Loss: 0.5288 - Val. Loss: 0.5382
+EarlyStopping counter: 49 of 100
+[308/1000] | Epoch Time: 0m 8s - Train Loss: 0.5267 - Val. Loss: 0.5383
+EarlyStopping counter: 50 of 100
+[309/1000] | Epoch Time: 0m 9s - Train Loss: 0.5271 - Val. Loss: 0.5386
+EarlyStopping counter: 51 of 100
+[310/1000] | Epoch Time: 0m 8s - Train Loss: 0.5271 - Val. Loss: 0.5387
+EarlyStopping counter: 52 of 100
+[311/1000] | Epoch Time: 0m 9s - Train Loss: 0.5276 - Val. Loss: 0.5381
+EarlyStopping counter: 53 of 100
+[312/1000] | Epoch Time: 0m 8s - Train Loss: 0.5268 - Val. Loss: 0.5388
+EarlyStopping counter: 54 of 100
+[313/1000] | Epoch Time: 0m 9s - Train Loss: 0.5328 - Val. Loss: 0.5383
+EarlyStopping counter: 55 of 100
+[314/1000] | Epoch Time: 0m 7s - Train Loss: 0.5301 - Val. Loss: 0.5384
+EarlyStopping counter: 56 of 100
+[315/1000] | Epoch Time: 0m 8s - Train Loss: 0.5299 - Val. Loss: 0.5389
+EarlyStopping counter: 57 of 100
+[316/1000] | Epoch Time: 0m 7s - Train Loss: 0.5295 - Val. Loss: 0.5394
+EarlyStopping counter: 58 of 100
+[317/1000] | Epoch Time: 0m 7s - Train Loss: 0.5301 - Val. Loss: 0.5387
+EarlyStopping counter: 59 of 100
+[318/1000] | Epoch Time: 0m 8s - Train Loss: 0.5303 - Val. Loss: 0.5390
+EarlyStopping counter: 60 of 100
+[319/1000] | Epoch Time: 0m 10s - Train Loss: 0.5287 - Val. Loss: 0.5386
+EarlyStopping counter: 61 of 100
+[320/1000] | Epoch Time: 0m 8s - Train Loss: 0.5268 - Val. Loss: 0.5379
+EarlyStopping counter: 62 of 100
+[321/1000] | Epoch Time: 0m 11s - Train Loss: 0.5308 - Val. Loss: 0.5386
+EarlyStopping counter: 63 of 100
+[322/1000] | Epoch Time: 0m 9s - Train Loss: 0.5304 - Val. Loss: 0.5380
+EarlyStopping counter: 64 of 100
+[323/1000] | Epoch Time: 0m 10s - Train Loss: 0.5336 - Val. Loss: 0.5385
+EarlyStopping counter: 65 of 100
+[324/1000] | Epoch Time: 0m 7s - Train Loss: 0.5321 - Val. Loss: 0.5383
+EarlyStopping counter: 66 of 100
+[325/1000] | Epoch Time: 0m 9s - Train Loss: 0.5311 - Val. Loss: 0.5390
+EarlyStopping counter: 67 of 100
+[326/1000] | Epoch Time: 0m 7s - Train Loss: 0.5276 - Val. Loss: 0.5390
+EarlyStopping counter: 68 of 100
+[327/1000] | Epoch Time: 0m 7s - Train Loss: 0.5262 - Val. Loss: 0.5387
+EarlyStopping counter: 69 of 100
+[328/1000] | Epoch Time: 0m 9s - Train Loss: 0.5290 - Val. Loss: 0.5378
+EarlyStopping counter: 70 of 100
+[329/1000] | Epoch Time: 0m 8s - Train Loss: 0.5305 - Val. Loss: 0.5385
+EarlyStopping counter: 71 of 100
+[330/1000] | Epoch Time: 0m 8s - Train Loss: 0.5279 - Val. Loss: 0.5388
+EarlyStopping counter: 72 of 100
+[331/1000] | Epoch Time: 0m 8s - Train Loss: 0.5290 - Val. Loss: 0.5385
+EarlyStopping counter: 73 of 100
+[332/1000] | Epoch Time: 0m 7s - Train Loss: 0.5280 - Val. Loss: 0.5388
+EarlyStopping counter: 74 of 100
+[333/1000] | Epoch Time: 0m 8s - Train Loss: 0.5294 - Val. Loss: 0.5387
+EarlyStopping counter: 75 of 100
+[334/1000] | Epoch Time: 0m 8s - Train Loss: 0.5285 - Val. Loss: 0.5388
+EarlyStopping counter: 76 of 100
+[335/1000] | Epoch Time: 0m 7s - Train Loss: 0.5296 - Val. Loss: 0.5384
+EarlyStopping counter: 77 of 100
+[336/1000] | Epoch Time: 0m 8s - Train Loss: 0.5295 - Val. Loss: 0.5384
+EarlyStopping counter: 78 of 100
+[337/1000] | Epoch Time: 0m 12s - Train Loss: 0.5303 - Val. Loss: 0.5384
+EarlyStopping counter: 79 of 100
+[338/1000] | Epoch Time: 0m 7s - Train Loss: 0.5313 - Val. Loss: 0.5383
+EarlyStopping counter: 80 of 100
+[339/1000] | Epoch Time: 0m 7s - Train Loss: 0.5311 - Val. Loss: 0.5383
+EarlyStopping counter: 81 of 100
+[340/1000] | Epoch Time: 0m 8s - Train Loss: 0.5276 - Val. Loss: 0.5383
+EarlyStopping counter: 82 of 100
+[341/1000] | Epoch Time: 0m 8s - Train Loss: 0.5305 - Val. Loss: 0.5382
+EarlyStopping counter: 83 of 100
+[342/1000] | Epoch Time: 0m 8s - Train Loss: 0.5293 - Val. Loss: 0.5383
+EarlyStopping counter: 84 of 100
+[343/1000] | Epoch Time: 0m 7s - Train Loss: 0.5287 - Val. Loss: 0.5382
+EarlyStopping counter: 85 of 100
+[344/1000] | Epoch Time: 0m 7s - Train Loss: 0.5310 - Val. Loss: 0.5382
+EarlyStopping counter: 86 of 100
+[345/1000] | Epoch Time: 0m 9s - Train Loss: 0.5294 - Val. Loss: 0.5378
+EarlyStopping counter: 87 of 100
+[346/1000] | Epoch Time: 0m 8s - Train Loss: 0.5323 - Val. Loss: 0.5385
+EarlyStopping counter: 88 of 100
+[347/1000] | Epoch Time: 0m 8s - Train Loss: 0.5321 - Val. Loss: 0.5389
+EarlyStopping counter: 89 of 100
+[348/1000] | Epoch Time: 0m 8s - Train Loss: 0.5270 - Val. Loss: 0.5395
+EarlyStopping counter: 90 of 100
+[349/1000] | Epoch Time: 0m 10s - Train Loss: 0.5296 - Val. Loss: 0.5386
+EarlyStopping counter: 91 of 100
+[350/1000] | Epoch Time: 0m 10s - Train Loss: 0.5294 - Val. Loss: 0.5385
+EarlyStopping counter: 92 of 100
+[351/1000] | Epoch Time: 0m 6s - Train Loss: 0.5302 - Val. Loss: 0.5387
+EarlyStopping counter: 93 of 100
+[352/1000] | Epoch Time: 0m 7s - Train Loss: 0.5314 - Val. Loss: 0.5390
+EarlyStopping counter: 94 of 100
+[353/1000] | Epoch Time: 0m 9s - Train Loss: 0.5308 - Val. Loss: 0.5387
+EarlyStopping counter: 95 of 100
+[354/1000] | Epoch Time: 0m 7s - Train Loss: 0.5313 - Val. Loss: 0.5383
+EarlyStopping counter: 96 of 100
+[355/1000] | Epoch Time: 0m 7s - Train Loss: 0.5283 - Val. Loss: 0.5384
+EarlyStopping counter: 97 of 100
+[356/1000] | Epoch Time: 0m 8s - Train Loss: 0.5291 - Val. Loss: 0.5384
+EarlyStopping counter: 98 of 100
+[357/1000] | Epoch Time: 0m 7s - Train Loss: 0.5348 - Val. Loss: 0.5383
+EarlyStopping counter: 99 of 100
+[358/1000] | Epoch Time: 0m 9s - Train Loss: 0.5290 - Val. Loss: 0.5385
+EarlyStopping counter: 100 of 100
+Early stopping triggered
+Early stopping triggered. Training will stop.
