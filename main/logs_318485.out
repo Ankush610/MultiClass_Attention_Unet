@@ -1,0 +1,17 @@
+==========================================
+SLURM_CLUSTER_NAME = paramprabha
+SLURM_JOB_ACCOUNT = cdac
+SLURM_JOB_ID = 318485
+SLURM_JOB_NAME = av_train
+SLURM_JOB_NODELIST = rpgpu014
+SLURM_JOB_USER = omjadhav
+SLURM_JOB_UID = 52009
+SLURM_JOB_PARTITION = gpu
+SLURM_TASK_PID = 1673429
+SLURM_SUBMIT_DIR = /home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/main
+SLURM_CPUS_ON_NODE = 20
+SLURM_NTASKS = 1
+SLURM_TASK_PID = 1673429
+==========================================
+Found images: 0
+Found masks : 0
