@@ -5,6 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
+    "accelerate>=1.11.0",
     "albumentations>=2.0.8",
     "numpy>=2.2.6",
     "opencv-python>=4.11.0.86",
