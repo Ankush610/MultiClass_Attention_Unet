@@ -1,0 +1,119 @@
+/var/share/slurm/d/job318796/slurm_script: line 60: /scratch/hpcws.2/setup/working/dependencies.sh: No such file or directory
+The following values were not passed to `accelerate launch` and had defaults used instead:
+		More than one GPU was found, enabling multi-GPU training.
+		If this was unintended please pass in `--num_processes=1`.
+To avoid this warning pass in values for each of the problematic parameters or run `accelerate config`.
+The following values were not passed to `accelerate launch` and had defaults used instead:
+		More than one GPU was found, enabling multi-GPU training.
+		If this was unintended please pass in `--num_processes=1`.
+To avoid this warning pass in values for each of the problematic parameters or run `accelerate config`.
+I1120 16:24:04.900000 1524996 torch/distributed/run.py:657] Using nproc_per_node=2.
+I1120 16:24:04.901000 1524996 torch/distributed/launcher/api.py:199] Starting elastic_operator with launch configs:
+I1120 16:24:04.901000 1524996 torch/distributed/launcher/api.py:199]   entrypoint         : train_ddp.py
+I1120 16:24:04.901000 1524996 torch/distributed/launcher/api.py:199]   min_nodes          : 2
+I1120 16:24:04.901000 1524996 torch/distributed/launcher/api.py:199]   max_nodes          : 2
+I1120 16:24:04.901000 1524996 torch/distributed/launcher/api.py:199]   nproc_per_node     : 2
+I1120 16:24:04.901000 1524996 torch/distributed/launcher/api.py:199]   run_id             : none
+I1120 16:24:04.901000 1524996 torch/distributed/launcher/api.py:199]   rdzv_backend       : static
+I1120 16:24:04.901000 1524996 torch/distributed/launcher/api.py:199]   rdzv_endpoint      : 172.5.3.13:29900
+I1120 16:24:04.901000 1524996 torch/distributed/launcher/api.py:199]   rdzv_configs       : {'rank': 0, 'timeout': 900}
+I1120 16:24:04.901000 1524996 torch/distributed/launcher/api.py:199]   max_restarts       : 0
+I1120 16:24:04.901000 1524996 torch/distributed/launcher/api.py:199]   monitor_interval   : 0.1
+I1120 16:24:04.901000 1524996 torch/distributed/launcher/api.py:199]   log_dir            : /tmp/torchelastic_ze0esl8j
+I1120 16:24:04.901000 1524996 torch/distributed/launcher/api.py:199]   metrics_cfg        : {}
+I1120 16:24:04.901000 1524996 torch/distributed/launcher/api.py:199]   event_log_handler  : null
+I1120 16:24:04.901000 1524996 torch/distributed/launcher/api.py:199] 
+I1120 16:24:04.906000 1673904 torch/distributed/run.py:657] Using nproc_per_node=2.
+I1120 16:24:04.906000 1524996 torch/distributed/elastic/agent/server/api.py:869] [default] starting workers for entrypoint: python3
+I1120 16:24:04.906000 1524996 torch/distributed/elastic/agent/server/api.py:677] [default] Rendezvous'ing worker group
+I1120 16:24:04.907000 1673904 torch/distributed/launcher/api.py:199] Starting elastic_operator with launch configs:
+I1120 16:24:04.907000 1673904 torch/distributed/launcher/api.py:199]   entrypoint         : train_ddp.py
+I1120 16:24:04.907000 1673904 torch/distributed/launcher/api.py:199]   min_nodes          : 2
+I1120 16:24:04.907000 1673904 torch/distributed/launcher/api.py:199]   max_nodes          : 2
+I1120 16:24:04.907000 1673904 torch/distributed/launcher/api.py:199]   nproc_per_node     : 2
+I1120 16:24:04.907000 1673904 torch/distributed/launcher/api.py:199]   run_id             : none
+I1120 16:24:04.907000 1673904 torch/distributed/launcher/api.py:199]   rdzv_backend       : static
+I1120 16:24:04.907000 1673904 torch/distributed/launcher/api.py:199]   rdzv_endpoint      : 172.5.3.13:29900
+I1120 16:24:04.907000 1673904 torch/distributed/launcher/api.py:199]   rdzv_configs       : {'rank': 0, 'timeout': 900}
+I1120 16:24:04.907000 1673904 torch/distributed/launcher/api.py:199]   max_restarts       : 0
+I1120 16:24:04.907000 1673904 torch/distributed/launcher/api.py:199]   monitor_interval   : 0.1
+I1120 16:24:04.907000 1673904 torch/distributed/launcher/api.py:199]   log_dir            : /tmp/torchelastic_n8pr77mx
+I1120 16:24:04.907000 1673904 torch/distributed/launcher/api.py:199]   metrics_cfg        : {}
+I1120 16:24:04.907000 1673904 torch/distributed/launcher/api.py:199]   event_log_handler  : null
+I1120 16:24:04.907000 1673904 torch/distributed/launcher/api.py:199] 
+I1120 16:24:04.923000 1673904 torch/distributed/elastic/agent/server/api.py:869] [default] starting workers for entrypoint: python3
+I1120 16:24:04.923000 1673904 torch/distributed/elastic/agent/server/api.py:677] [default] Rendezvous'ing worker group
+[W1120 16:39:05.981069354 socket.cpp:460] [c10d] waitForInput: poll for socket SocketImpl(fd=36, addr=[rpgpu014]:43144, remote=[rpgpu013]:29900) returned 0, likely a timeout
+[W1120 16:39:05.017824354 socket.cpp:485] [c10d] waitForInput: socket SocketImpl(fd=36, addr=[rpgpu014]:43144, remote=[rpgpu013]:29900) timed out after 900000ms
+[W1120 16:39:05.399121718 socket.cpp:460] [c10d] waitForInput: poll for socket SocketImpl(fd=36, addr=[rpgpu013]:47410, remote=[rpgpu013]:29900) returned 0, likely a timeout
+[W1120 16:39:05.401977723 socket.cpp:485] [c10d] waitForInput: socket SocketImpl(fd=36, addr=[rpgpu013]:47410, remote=[rpgpu013]:29900) timed out after 900000ms
+Traceback (most recent call last):
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/bin/accelerate", line 10, in <module>
+Traceback (most recent call last):
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/bin/accelerate", line 10, in <module>
+    sys.exit(main())
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/accelerate/commands/accelerate_cli.py", line 50, in main
+    sys.exit(main())
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/accelerate/commands/accelerate_cli.py", line 50, in main
+    args.func(args)
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/accelerate/commands/launch.py", line 1226, in launch_command
+    multi_gpu_launcher(args)
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/accelerate/commands/launch.py", line 853, in multi_gpu_launcher
+    args.func(args)
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/accelerate/commands/launch.py", line 1226, in launch_command
+    distrib_run.run(args)
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/torch/distributed/run.py", line 892, in run
+    multi_gpu_launcher(args)
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/accelerate/commands/launch.py", line 853, in multi_gpu_launcher
+    elastic_launch(
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 143, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    result = agent.run()
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 138, in wrapper
+    distrib_run.run(args)
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/torch/distributed/run.py", line 892, in run
+    result = f(*args, **kwargs)
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 715, in run
+    result = self._invoke_run(role)
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 873, in _invoke_run
+    elastic_launch(
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 143, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+    self._initialize_workers(self._worker_group)
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 138, in wrapper
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 268, in launch_agent
+    result = agent.run()
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 138, in wrapper
+    result = f(*args, **kwargs)
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 683, in _initialize_workers
+    self._rendezvous(worker_group)
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 138, in wrapper
+    result = f(*args, **kwargs)
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 715, in run
+    result = f(*args, **kwargs)
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 511, in _rendezvous
+    result = self._invoke_run(role)
+    workers = self._assign_worker_ranks(
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 138, in wrapper
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 873, in _invoke_run
+    result = f(*args, **kwargs)
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 605, in _assign_worker_ranks
+    self._initialize_workers(self._worker_group)
+    role_infos_bytes = store.multi_get(
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 138, in wrapper
+torch.distributed.DistStoreError: wait timeout after 900000ms, keys: /none/torchelastic/role_info/0, /none/torchelastic/role_info/1
+    result = f(*args, **kwargs)
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 683, in _initialize_workers
+    self._rendezvous(worker_group)
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 138, in wrapper
+    result = f(*args, **kwargs)
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 511, in _rendezvous
+    workers = self._assign_worker_ranks(
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 138, in wrapper
+    result = f(*args, **kwargs)
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 605, in _assign_worker_ranks
+    role_infos_bytes = store.multi_get(
+torch.distributed.DistStoreError: wait timeout after 900000ms, keys: /none/torchelastic/role_info/0, /none/torchelastic/role_info/1
+srun: error: rpgpu014: task 1: Exited with exit code 1
+srun: error: rpgpu013: task 0: Exited with exit code 1

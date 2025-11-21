@@ -1,0 +1,944 @@
+==========================================
+SLURM_CLUSTER_NAME = paramprabha
+SLURM_JOB_ACCOUNT = cdac
+SLURM_JOB_ID = 318897
+SLURM_JOB_NAME = mnist_code
+SLURM_JOB_NODELIST = rpgpu[019-020]
+SLURM_JOB_USER = omjadhav
+SLURM_JOB_UID = 52009
+SLURM_JOB_PARTITION = gpu
+SLURM_TASK_PID = 3210045
+SLURM_SUBMIT_DIR = /home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/main
+SLURM_CPUS_ON_NODE = 10
+SLURM_NTASKS = 2
+SLURM_TASK_PID = 3210045
+==========================================
+====================================
+SLURM Job Information
+====================================
+Job Name: mnist_code
+Number of Nodes: 2
+Number of GPUs per Node: 2
+Nodes Array: rpgpu019 rpgpu020
+Head Node: rpgpu019
+Head Node IP: 172.5.3.19
+====================================
+====================================
+Distributed Setup
+====================================
+MASTER_ADDR: 172.5.3.19
+MASTER_PORT: 29900
+WORLD_SIZE: 4
+RANK: 0
+NCCL_IB_DISABLE: 0
+NCCL_DEBUG: INFO
+Connectio MODE : Using InfiniBand (NCCL_IB_ENABLE)
+====================================
+====================================
+Launching Accelerate Training
+====================================
+Found images: 207
+Found masks : 207
+Found images: 207
+Found images: 207
+Found masks : 207
+Found masks : 207
+Found images: 207
+Found masks : 207
+Dataset Size: Train: 166 - Valid: 41
+Dataset Size: Train: 166 - Valid: 41
+Dataset Size: Train: 166 - Valid: 41
+Dataset Size: Train: 166 - Valid: 41
+Device: cudaDevice: cuda
+
+GPU device name:GPU device name:  NVIDIA A100 80GB PCIeNVIDIA A100 80GB PCIe
+
+No checkpoint found, starting from scratch.
+No checkpoint found, starting from scratch.
+Device: cuda
+GPU device name: NVIDIA A100 80GB PCIe
+Device: cuda
+GPU device name: NVIDIA A100 80GB PCIe
+No checkpoint found, starting from scratch.
+No checkpoint found, starting from scratch.
+rpgpu019:3210108:3210108 [0] NCCL INFO Bootstrap: Using ib0:172.6.3.19<0>
+rpgpu020:1611701:1611701 [0] NCCL INFO Bootstrap: Using ib0:172.6.3.20<0>
+rpgpu019:3210108:3210108 [0] NCCL INFO cudaDriverVersion 12040
+rpgpu019:3210108:3210108 [0] NCCL INFO NCCL version 2.27.3+cuda12.9
+rpgpu020:1611701:1611701 [0] NCCL INFO cudaDriverVersion 12040
+rpgpu020:1611701:1611701 [0] NCCL INFO NCCL version 2.27.3+cuda12.9
+rpgpu020:1611701:1611701 [0] NCCL INFO Comm config Blocking set to 1
+rpgpu019:3210108:3210108 [0] NCCL INFO Comm config Blocking set to 1
+rpgpu020:1611702:1611702 [1] NCCL INFO cudaDriverVersion 12040
+rpgpu020:1611702:1611702 [1] NCCL INFO Bootstrap: Using ib0:172.6.3.20<0>
+rpgpu020:1611702:1611702 [1] NCCL INFO NCCL version 2.27.3+cuda12.9
+rpgpu019:3210109:3210109 [1] NCCL INFO cudaDriverVersion 12040
+rpgpu019:3210109:3210109 [1] NCCL INFO Bootstrap: Using ib0:172.6.3.19<0>
+rpgpu019:3210109:3210109 [1] NCCL INFO NCCL version 2.27.3+cuda12.9
+rpgpu020:1611702:1611702 [1] NCCL INFO Comm config Blocking set to 1
+rpgpu019:3210109:3210109 [1] NCCL INFO Comm config Blocking set to 1
+rpgpu020:1611701:1611758 [0] NCCL INFO NET/Plugin: Could not find: libnccl-net.so. 
+rpgpu020:1611702:1611759 [1] NCCL INFO NET/Plugin: Could not find: libnccl-net.so. 
+rpgpu020:1611701:1611758 [0] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+rpgpu020:1611702:1611759 [1] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+rpgpu019:3210109:3210166 [1] NCCL INFO NET/Plugin: Could not find: libnccl-net.so. 
+rpgpu019:3210108:3210165 [0] NCCL INFO NET/Plugin: Could not find: libnccl-net.so. 
+rpgpu019:3210109:3210166 [1] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+rpgpu019:3210108:3210165 [0] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+rpgpu020:1611701:1611758 [0] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:172.6.3.20<0>
+rpgpu020:1611701:1611758 [0] NCCL INFO Initialized NET plugin IB
+rpgpu019:3210108:3210165 [0] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:172.6.3.19<0>
+rpgpu019:3210108:3210165 [0] NCCL INFO Initialized NET plugin IB
+rpgpu020:1611701:1611758 [0] NCCL INFO Assigned NET plugin IB to comm
+rpgpu019:3210108:3210165 [0] NCCL INFO Assigned NET plugin IB to comm
+rpgpu020:1611701:1611758 [0] NCCL INFO Using network IB
+rpgpu019:3210108:3210165 [0] NCCL INFO Using network IB
+rpgpu020:1611701:1611758 [0] NCCL INFO ncclCommInitRankConfig comm 0xc369940 rank 0 nranks 2 cudaDev 0 nvmlDev 0 busId 3b000 commId 0x7ad726bc1409f2f - Init START
+rpgpu019:3210108:3210165 [0] NCCL INFO ncclCommInitRankConfig comm 0xbf3ee00 rank 0 nranks 2 cudaDev 0 nvmlDev 0 busId 3b000 commId 0x38cd1a675a24db4e - Init START
+rpgpu019:3210109:3210166 [1] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:172.6.3.19<0>
+rpgpu019:3210109:3210166 [1] NCCL INFO Initialized NET plugin IB
+rpgpu019:3210109:3210166 [1] NCCL INFO Assigned NET plugin IB to comm
+rpgpu019:3210109:3210166 [1] NCCL INFO Using network IB
+rpgpu019:3210109:3210166 [1] NCCL INFO ncclCommInitRankConfig comm 0xbdbf890 rank 1 nranks 2 cudaDev 1 nvmlDev 1 busId 5e000 commId 0x38cd1a675a24db4e - Init START
+rpgpu020:1611702:1611759 [1] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:172.6.3.20<0>
+rpgpu020:1611702:1611759 [1] NCCL INFO Initialized NET plugin IB
+rpgpu020:1611702:1611759 [1] NCCL INFO Assigned NET plugin IB to comm
+rpgpu020:1611702:1611759 [1] NCCL INFO Using network IB
+rpgpu019:3210109:3210166 [1] NCCL INFO RAS client listening socket at 127.0.0.1<28028>
+rpgpu019:3210108:3210165 [0] NCCL INFO RAS client listening socket at 127.0.0.1<28028>
+rpgpu019:3210108:3210165 [0] NCCL INFO Bootstrap timings total 0.011967 (create 0.000022, send 0.000079, recv 0.011424, ring 0.000019, delay 0.000002)
+rpgpu019:3210109:3210166 [1] NCCL INFO Bootstrap timings total 0.000609 (create 0.000017, send 0.000067, recv 0.000101, ring 0.000018, delay 0.000001)
+rpgpu020:1611702:1611759 [1] NCCL INFO ncclCommInitRankConfig comm 0xc23bc40 rank 1 nranks 2 cudaDev 1 nvmlDev 1 busId 5e000 commId 0x7ad726bc1409f2f - Init START
+rpgpu020:1611702:1611759 [1] NCCL INFO RAS client listening socket at 127.0.0.1<28028>
+rpgpu020:1611701:1611758 [0] NCCL INFO RAS client listening socket at 127.0.0.1<28028>
+rpgpu020:1611701:1611758 [0] NCCL INFO Bootstrap timings total 0.012706 (create 0.000020, send 0.000073, recv 0.012182, ring 0.000018, delay 0.000002)
+rpgpu020:1611702:1611759 [1] NCCL INFO Bootstrap timings total 0.000620 (create 0.000016, send 0.000060, recv 0.000115, ring 0.000023, delay 0.000001)
+rpgpu019:3210109:3210166 [1] NCCL INFO Setting affinity for GPU 1 to 0-4
+rpgpu019:3210108:3210165 [0] NCCL INFO Setting affinity for GPU 0 to 0-4
+rpgpu019:3210109:3210166 [1] NCCL INFO comm 0xbdbf890 rank 1 nRanks 2 nNodes 1 localRanks 2 localRank 1 MNNVL 0
+rpgpu019:3210108:3210165 [0] NCCL INFO comm 0xbf3ee00 rank 0 nRanks 2 nNodes 1 localRanks 2 localRank 0 MNNVL 0
+rpgpu019:3210109:3210166 [1] NCCL INFO Trees [0] -1/-1/-1->1->0 [1] -1/-1/-1->1->0
+rpgpu019:3210109:3210166 [1] NCCL INFO P2P Chunksize set to 131072
+rpgpu019:3210108:3210165 [0] NCCL INFO Channel 00/02 : 0 1
+rpgpu019:3210108:3210165 [0] NCCL INFO Channel 01/02 : 0 1
+rpgpu019:3210108:3210165 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] 1/-1/-1->0->-1
+rpgpu019:3210108:3210165 [0] NCCL INFO P2P Chunksize set to 131072
+rpgpu020:1611701:1611758 [0] NCCL INFO Setting affinity for GPU 0 to 0-4
+rpgpu020:1611702:1611759 [1] NCCL INFO Setting affinity for GPU 1 to 0-4
+rpgpu020:1611701:1611758 [0] NCCL INFO comm 0xc369940 rank 0 nRanks 2 nNodes 1 localRanks 2 localRank 0 MNNVL 0
+rpgpu020:1611702:1611759 [1] NCCL INFO comm 0xc23bc40 rank 1 nRanks 2 nNodes 1 localRanks 2 localRank 1 MNNVL 0
+rpgpu020:1611702:1611759 [1] NCCL INFO Trees [0] -1/-1/-1->1->0 [1] -1/-1/-1->1->0
+rpgpu020:1611702:1611759 [1] NCCL INFO P2P Chunksize set to 131072
+rpgpu020:1611701:1611758 [0] NCCL INFO Channel 00/02 : 0 1
+rpgpu019:3210108:3210165 [0] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so. 
+rpgpu019:3210108:3210165 [0] NCCL INFO Check P2P Type isAllDirectP2p 0 directMode 0
+rpgpu019:3210109:3210166 [1] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so. 
+rpgpu020:1611701:1611758 [0] NCCL INFO Channel 01/02 : 0 1
+rpgpu020:1611701:1611758 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] 1/-1/-1->0->-1
+rpgpu020:1611701:1611758 [0] NCCL INFO P2P Chunksize set to 131072
+rpgpu019:3210108:3210173 [0] NCCL INFO [Proxy Service UDS] Device 0 CPU core 4
+rpgpu019:3210108:3210171 [0] NCCL INFO [Proxy Service] Device 0 CPU core 1
+rpgpu019:3210109:3210166 [1] NCCL INFO threadThresholds 8/8/64 | 16/8/64 | 512 | 512
+rpgpu019:3210109:3210166 [1] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+rpgpu019:3210108:3210165 [0] NCCL INFO threadThresholds 8/8/64 | 16/8/64 | 512 | 512
+rpgpu019:3210108:3210165 [0] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+rpgpu019:3210108:3210165 [0] NCCL INFO CC Off, workFifoBytes 1048576
+rpgpu019:3210109:3210174 [1] NCCL INFO [Proxy Service UDS] Device 1 CPU core 3
+rpgpu019:3210109:3210172 [1] NCCL INFO [Proxy Service] Device 1 CPU core 2
+rpgpu020:1611702:1611759 [1] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so. 
+rpgpu020:1611701:1611758 [0] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so. 
+rpgpu020:1611701:1611758 [0] NCCL INFO Check P2P Type isAllDirectP2p 0 directMode 0
+rpgpu020:1611702:1611764 [1] NCCL INFO [Proxy Service] Device 1 CPU core 3
+rpgpu020:1611702:1611766 [1] NCCL INFO [Proxy Service UDS] Device 1 CPU core 0
+rpgpu020:1611701:1611767 [0] NCCL INFO [Proxy Service UDS] Device 0 CPU core 1
+rpgpu020:1611701:1611765 [0] NCCL INFO [Proxy Service] Device 0 CPU core 1
+rpgpu020:1611702:1611759 [1] NCCL INFO threadThresholds 8/8/64 | 16/8/64 | 512 | 512
+rpgpu020:1611702:1611759 [1] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+rpgpu020:1611701:1611758 [0] NCCL INFO threadThresholds 8/8/64 | 16/8/64 | 512 | 512
+rpgpu020:1611701:1611758 [0] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+rpgpu020:1611701:1611758 [0] NCCL INFO CC Off, workFifoBytes 1048576
+rpgpu019:3210109:3210166 [1] NCCL INFO TUNER/Plugin: Could not find: libnccl-tuner.so. Using internal tuner plugin.
+rpgpu019:3210109:3210166 [1] NCCL INFO ncclCommInitRankConfig comm 0xbdbf890 rank 1 nranks 2 cudaDev 1 nvmlDev 1 busId 5e000 commId 0x38cd1a675a24db4e - Init COMPLETE
+rpgpu019:3210108:3210165 [0] NCCL INFO TUNER/Plugin: Could not find: libnccl-tuner.so. Using internal tuner plugin.
+rpgpu019:3210109:3210166 [1] NCCL INFO Init timings - ncclCommInitRankConfig: rank 1 nranks 2 total 0.78 (kernels 0.70, alloc 0.02, bootstrap 0.00, allgathers 0.00, topo 0.04, graphs 0.00, connections 0.00, rest 0.01)
+rpgpu019:3210108:3210165 [0] NCCL INFO ncclCommInitRankConfig comm 0xbf3ee00 rank 0 nranks 2 cudaDev 0 nvmlDev 0 busId 3b000 commId 0x38cd1a675a24db4e - Init COMPLETE
+rpgpu019:3210108:3210165 [0] NCCL INFO Init timings - ncclCommInitRankConfig: rank 0 nranks 2 total 0.78 (kernels 0.71, alloc 0.01, bootstrap 0.01, allgathers 0.00, topo 0.04, graphs 0.00, connections 0.00, rest 0.01)
+rpgpu020:1611702:1611759 [1] NCCL INFO TUNER/Plugin: Could not find: libnccl-tuner.so. Using internal tuner plugin.
+rpgpu020:1611702:1611759 [1] NCCL INFO ncclCommInitRankConfig comm 0xc23bc40 rank 1 nranks 2 cudaDev 1 nvmlDev 1 busId 5e000 commId 0x7ad726bc1409f2f - Init COMPLETE
+rpgpu020:1611701:1611758 [0] NCCL INFO TUNER/Plugin: Could not find: libnccl-tuner.so. Using internal tuner plugin.
+rpgpu020:1611702:1611759 [1] NCCL INFO Init timings - ncclCommInitRankConfig: rank 1 nranks 2 total 0.78 (kernels 0.70, alloc 0.03, bootstrap 0.00, allgathers 0.00, topo 0.04, graphs 0.00, connections 0.00, rest 0.01)
+rpgpu020:1611701:1611758 [0] NCCL INFO ncclCommInitRankConfig comm 0xc369940 rank 0 nranks 2 cudaDev 0 nvmlDev 0 busId 3b000 commId 0x7ad726bc1409f2f - Init COMPLETE
+rpgpu020:1611701:1611758 [0] NCCL INFO Init timings - ncclCommInitRankConfig: rank 0 nranks 2 total 0.79 (kernels 0.71, alloc 0.01, bootstrap 0.01, allgathers 0.00, topo 0.04, graphs 0.00, connections 0.00, rest 0.01)
+rpgpu019:3210108:3210175 [0] NCCL INFO Channel 00 : 0[0] -> 1[1] via SHM/direct/direct
+rpgpu019:3210109:3210176 [1] NCCL INFO Channel 00 : 1[1] -> 0[0] via SHM/direct/direct
+rpgpu019:3210108:3210175 [0] NCCL INFO Channel 01 : 0[0] -> 1[1] via SHM/direct/direct
+rpgpu019:3210109:3210176 [1] NCCL INFO Channel 01 : 1[1] -> 0[0] via SHM/direct/direct
+rpgpu020:1611702:1611769 [1] NCCL INFO Channel 00 : 1[1] -> 0[0] via SHM/direct/direct
+rpgpu020:1611702:1611769 [1] NCCL INFO Channel 01 : 1[1] -> 0[0] via SHM/direct/direct
+rpgpu020:1611701:1611768 [0] NCCL INFO Channel 00 : 0[0] -> 1[1] via SHM/direct/direct
+rpgpu020:1611701:1611768 [0] NCCL INFO Channel 01 : 0[0] -> 1[1] via SHM/direct/direct
+rpgpu019:3210109:3210176 [1] NCCL INFO Connected all rings, use ring PXN 0 GDR 1
+rpgpu019:3210108:3210175 [0] NCCL INFO Connected all rings, use ring PXN 0 GDR 1
+rpgpu020:1611702:1611769 [1] NCCL INFO Connected all rings, use ring PXN 0 GDR 1
+rpgpu020:1611701:1611768 [0] NCCL INFO Connected all rings, use ring PXN 0 GDR 1
+[01/1000] | Epoch Time: 0m 23s - Train Loss: 1.4706 - Val. Loss: 1.3113
+[01/1000] | Epoch Time: 0m 23s - Train Loss: 1.4746 - Val. Loss: 1.3131
+Checkpoint saved at epoch 1
+Checkpoint saved at epoch 1
+Checkpoint saved at epoch 1
+Checkpoint saved at epoch 1
+[02/1000] | Epoch Time: 0m 3s - Train Loss: 1.2465 - Val. Loss: 1.1619
+[02/1000] | Epoch Time: 0m 3s - Train Loss: 1.2466 - Val. Loss: 1.1573
+Checkpoint saved at epoch 2
+Checkpoint saved at epoch 2
+Checkpoint saved at epoch 2
+Checkpoint saved at epoch 2
+[03/1000] | Epoch Time: 0m 3s - Train Loss: 1.1129 - Val. Loss: 1.0494
+[03/1000] | Epoch Time: 0m 3s - Train Loss: 1.1088 - Val. Loss: 1.0437
+Checkpoint saved at epoch 3
+Checkpoint saved at epoch 3
+Checkpoint saved at epoch 3
+Checkpoint saved at epoch 3
+[04/1000] | Epoch Time: 0m 3s - Train Loss: 1.0180 - Val. Loss: 0.9694
+[04/1000] | Epoch Time: 0m 3s - Train Loss: 1.0147 - Val. Loss: 0.9670
+Checkpoint saved at epoch 4
+Checkpoint saved at epoch 4
+Checkpoint saved at epoch 4
+Checkpoint saved at epoch 4
+[05/1000] | Epoch Time: 0m 3s - Train Loss: 0.9474 - Val. Loss: 0.9107
+Checkpoint saved at epoch 5
+[05/1000] | Epoch Time: 0m 3s - Train Loss: 0.9464 - Val. Loss: 0.9101
+Checkpoint saved at epoch 5
+Checkpoint saved at epoch 5
+Checkpoint saved at epoch 5
+[06/1000] | Epoch Time: 0m 3s - Train Loss: 0.8918 - Val. Loss: 0.8558
+Checkpoint saved at epoch 6
+Checkpoint saved at epoch 6
+[06/1000] | Epoch Time: 0m 3s - Train Loss: 0.8924 - Val. Loss: 0.8575
+Checkpoint saved at epoch 6
+Checkpoint saved at epoch 6
+[07/1000] | Epoch Time: 0m 3s - Train Loss: 0.8489 - Val. Loss: 0.8246
+[07/1000] | Epoch Time: 0m 3s - Train Loss: 0.8482 - Val. Loss: 0.8218
+Checkpoint saved at epoch 7
+Checkpoint saved at epoch 7
+Checkpoint saved at epoch 7
+Checkpoint saved at epoch 7
+[08/1000] | Epoch Time: 0m 3s - Train Loss: 0.8167 - Val. Loss: 0.7843
+[08/1000] | Epoch Time: 0m 3s - Train Loss: 0.8142 - Val. Loss: 0.7863
+Checkpoint saved at epoch 8
+Checkpoint saved at epoch 8
+Checkpoint saved at epoch 8
+Checkpoint saved at epoch 8
+[09/1000] | Epoch Time: 0m 3s - Train Loss: 0.7821 - Val. Loss: 0.7638
+Checkpoint saved at epoch 9
+Checkpoint saved at epoch 9
+[09/1000] | Epoch Time: 0m 3s - Train Loss: 0.7833 - Val. Loss: 0.7661
+Checkpoint saved at epoch 9
+Checkpoint saved at epoch 9
+[10/1000] | Epoch Time: 0m 3s - Train Loss: 0.7529 - Val. Loss: 0.7264
+Checkpoint saved at epoch 10
+Checkpoint saved at epoch 10
+[10/1000] | Epoch Time: 0m 3s - Train Loss: 0.7520 - Val. Loss: 0.7318
+Checkpoint saved at epoch 10
+Checkpoint saved at epoch 10
+[11/1000] | Epoch Time: 0m 3s - Train Loss: 0.7372 - Val. Loss: 0.7114
+Checkpoint saved at epoch 11
+Checkpoint saved at epoch 11
+[11/1000] | Epoch Time: 0m 3s - Train Loss: 0.7396 - Val. Loss: 0.7137
+Checkpoint saved at epoch 11
+Checkpoint saved at epoch 11
+[12/1000] | Epoch Time: 0m 3s - Train Loss: 0.7252 - Val. Loss: 0.6996
+Checkpoint saved at epoch 12
+Checkpoint saved at epoch 12
+[12/1000] | Epoch Time: 0m 3s - Train Loss: 0.7227 - Val. Loss: 0.6994
+Checkpoint saved at epoch 12
+Checkpoint saved at epoch 12
+[13/1000] | Epoch Time: 0m 3s - Train Loss: 0.7130 - Val. Loss: 0.6879
+Checkpoint saved at epoch 13
+Checkpoint saved at epoch 13
+[13/1000] | Epoch Time: 0m 3s - Train Loss: 0.7086 - Val. Loss: 0.6867
+Checkpoint saved at epoch 13
+Checkpoint saved at epoch 13
+[14/1000] | Epoch Time: 0m 3s - Train Loss: 0.7023 - Val. Loss: 0.6777
+Checkpoint saved at epoch 14
+[14/1000] | Epoch Time: 0m 3s - Train Loss: 0.7009 - Val. Loss: 0.6800
+Checkpoint saved at epoch 14
+Checkpoint saved at epoch 14
+Checkpoint saved at epoch 14
+[15/1000] | Epoch Time: 0m 3s - Train Loss: 0.6931 - Val. Loss: 0.6710
+Checkpoint saved at epoch 15
+[15/1000] | Epoch Time: 0m 3s - Train Loss: 0.6866 - Val. Loss: 0.6634
+Checkpoint saved at epoch 15
+Checkpoint saved at epoch 15
+Checkpoint saved at epoch 15
+[16/1000] | Epoch Time: 0m 3s - Train Loss: 0.6864 - Val. Loss: 0.6635
+Checkpoint saved at epoch 16
+[16/1000] | Epoch Time: 0m 3s - Train Loss: 0.6790 - Val. Loss: 0.6491
+Checkpoint saved at epoch 16
+Checkpoint saved at epoch 16
+Checkpoint saved at epoch 16
+[17/1000] | Epoch Time: 0m 3s - Train Loss: 0.6821 - Val. Loss: 0.6521
+Checkpoint saved at epoch 17
+Checkpoint saved at epoch 17
+[17/1000] | Epoch Time: 0m 3s - Train Loss: 0.6716 - Val. Loss: 0.6421
+Checkpoint saved at epoch 17
+Checkpoint saved at epoch 17
+[18/1000] | Epoch Time: 0m 3s - Train Loss: 0.6682 - Val. Loss: 0.6383
+Checkpoint saved at epoch 18
+Checkpoint saved at epoch 18
+[18/1000] | Epoch Time: 0m 3s - Train Loss: 0.6585 - Val. Loss: 0.6329
+Checkpoint saved at epoch 18
+Checkpoint saved at epoch 18
+[19/1000] | Epoch Time: 0m 3s - Train Loss: 0.6589 - Val. Loss: 0.6328
+Checkpoint saved at epoch 19
+Checkpoint saved at epoch 19
+[19/1000] | Epoch Time: 0m 3s - Train Loss: 0.6519 - Val. Loss: 0.6297
+Checkpoint saved at epoch 19
+Checkpoint saved at epoch 19
+[20/1000] | Epoch Time: 0m 3s - Train Loss: 0.6616 - Val. Loss: 0.6274
+Checkpoint saved at epoch 20
+Checkpoint saved at epoch 20
+[20/1000] | Epoch Time: 0m 3s - Train Loss: 0.6503 - Val. Loss: 0.6182
+Checkpoint saved at epoch 20
+Checkpoint saved at epoch 20
+[21/1000] | Epoch Time: 0m 3s - Train Loss: 0.6467 - Val. Loss: 0.6265
+Checkpoint saved at epoch 21
+Checkpoint saved at epoch 21
+[21/1000] | Epoch Time: 0m 3s - Train Loss: 0.6393 - Val. Loss: 0.6166
+Checkpoint saved at epoch 21
+Checkpoint saved at epoch 21
+[22/1000] | Epoch Time: 0m 3s - Train Loss: 0.6501 - Val. Loss: 0.6143
+Checkpoint saved at epoch 22
+Checkpoint saved at epoch 22
+[22/1000] | Epoch Time: 0m 3s - Train Loss: 0.6382 - Val. Loss: 0.6113
+Checkpoint saved at epoch 22
+Checkpoint saved at epoch 22
+[23/1000] | Epoch Time: 0m 3s - Train Loss: 0.6420 - Val. Loss: 0.6113
+Checkpoint saved at epoch 23
+Checkpoint saved at epoch 23
+[23/1000] | Epoch Time: 0m 3s - Train Loss: 0.6322 - Val. Loss: 0.6012
+Checkpoint saved at epoch 23
+Checkpoint saved at epoch 23
+[24/1000] | Epoch Time: 0m 3s - Train Loss: 0.6318 - Val. Loss: 0.6050
+Checkpoint saved at epoch 24
+[24/1000] | Epoch Time: 0m 3s - Train Loss: 0.6185 - Val. Loss: 0.5966
+Checkpoint saved at epoch 24
+Checkpoint saved at epoch 24
+[25/1000] | Epoch Time: 0m 3s - Train Loss: 0.6282 - Val. Loss: 0.5961
+Checkpoint saved at epoch 25
+Checkpoint saved at epoch 25
+[25/1000] | Epoch Time: 0m 3s - Train Loss: 0.6125 - Val. Loss: 0.5891
+Checkpoint saved at epoch 25
+Checkpoint saved at epoch 25
+[26/1000] | Epoch Time: 0m 3s - Train Loss: 0.6305 - Val. Loss: 0.5963
+Checkpoint saved at epoch 26
+[26/1000] | Epoch Time: 0m 3s - Train Loss: 0.6181 - Val. Loss: 0.5889
+Checkpoint saved at epoch 26
+Checkpoint saved at epoch 26
+[27/1000] | Epoch Time: 0m 3s - Train Loss: 0.6175 - Val. Loss: 0.5898
+Checkpoint saved at epoch 27
+Checkpoint saved at epoch 27
+[27/1000] | Epoch Time: 0m 3s - Train Loss: 0.6042 - Val. Loss: 0.5874
+Checkpoint saved at epoch 27
+[28/1000] | Epoch Time: 0m 3s - Train Loss: 0.6178 - Val. Loss: 0.5924
+[28/1000] | Epoch Time: 0m 3s - Train Loss: 0.6046 - Val. Loss: 0.5830
+Checkpoint saved at epoch 28
+Checkpoint saved at epoch 28
+[29/1000] | Epoch Time: 0m 3s - Train Loss: 0.6081 - Val. Loss: 0.5890
+Checkpoint saved at epoch 29
+Checkpoint saved at epoch 29
+[29/1000] | Epoch Time: 0m 3s - Train Loss: 0.5940 - Val. Loss: 0.5743
+Checkpoint saved at epoch 29
+Checkpoint saved at epoch 29
+[30/1000] | Epoch Time: 0m 3s - Train Loss: 0.5991 - Val. Loss: 0.5918
+Checkpoint saved at epoch 30
+[30/1000] | Epoch Time: 0m 3s - Train Loss: 0.5861 - Val. Loss: 0.5624
+Checkpoint saved at epoch 30
+Checkpoint saved at epoch 30
+[31/1000] | Epoch Time: 0m 3s - Train Loss: 0.6076 - Val. Loss: 0.5762
+Checkpoint saved at epoch 31
+[31/1000] | Epoch Time: 0m 3s - Train Loss: 0.5850 - Val. Loss: 0.5651
+Checkpoint saved at epoch 31
+[32/1000] | Epoch Time: 0m 3s - Train Loss: 0.5940 - Val. Loss: 0.5745
+Checkpoint saved at epoch 32
+Checkpoint saved at epoch 32
+[32/1000] | Epoch Time: 0m 3s - Train Loss: 0.5818 - Val. Loss: 0.5663
+[33/1000] | Epoch Time: 0m 3s - Train Loss: 0.5907 - Val. Loss: 0.5695
+Checkpoint saved at epoch 33
+[33/1000] | Epoch Time: 0m 3s - Train Loss: 0.5791 - Val. Loss: 0.5667
+[34/1000] | Epoch Time: 0m 3s - Train Loss: 0.5933 - Val. Loss: 0.5740
+Checkpoint saved at epoch 34
+[34/1000] | Epoch Time: 0m 3s - Train Loss: 0.5794 - Val. Loss: 0.5555
+Checkpoint saved at epoch 34
+Checkpoint saved at epoch 34
+[35/1000] | Epoch Time: 0m 3s - Train Loss: 0.5868 - Val. Loss: 0.5610
+Checkpoint saved at epoch 35
+[35/1000] | Epoch Time: 0m 3s - Train Loss: 0.5689 - Val. Loss: 0.5462
+Checkpoint saved at epoch 35
+Checkpoint saved at epoch 35
+Checkpoint saved at epoch 35
+[36/1000] | Epoch Time: 0m 3s - Train Loss: 0.5787 - Val. Loss: 0.5564
+Checkpoint saved at epoch 36
+Checkpoint saved at epoch 36
+[36/1000] | Epoch Time: 0m 3s - Train Loss: 0.5700 - Val. Loss: 0.5432
+Checkpoint saved at epoch 36
+Checkpoint saved at epoch 36
+[37/1000] | Epoch Time: 0m 3s - Train Loss: 0.5735 - Val. Loss: 0.5631
+Checkpoint saved at epoch 37
+[37/1000] | Epoch Time: 0m 3s - Train Loss: 0.5604 - Val. Loss: 0.5488
+Checkpoint saved at epoch 37
+[38/1000] | Epoch Time: 0m 3s - Train Loss: 0.5747 - Val. Loss: 0.5517
+Checkpoint saved at epoch 38
+[38/1000] | Epoch Time: 0m 3s - Train Loss: 0.5598 - Val. Loss: 0.5438
+Checkpoint saved at epoch 38
+Checkpoint saved at epoch 38
+[39/1000] | Epoch Time: 0m 3s - Train Loss: 0.5829 - Val. Loss: 0.5532
+[39/1000] | Epoch Time: 0m 3s - Train Loss: 0.5694 - Val. Loss: 0.5398
+Checkpoint saved at epoch 39
+[40/1000] | Epoch Time: 0m 3s - Train Loss: 0.5811 - Val. Loss: 0.5506
+Checkpoint saved at epoch 40
+Checkpoint saved at epoch 40
+[40/1000] | Epoch Time: 0m 3s - Train Loss: 0.5650 - Val. Loss: 0.5347
+Checkpoint saved at epoch 40
+Checkpoint saved at epoch 40
+[41/1000] | Epoch Time: 0m 3s - Train Loss: 0.5570 - Val. Loss: 0.5452
+Checkpoint saved at epoch 41
+Checkpoint saved at epoch 41
+[41/1000] | Epoch Time: 0m 3s - Train Loss: 0.5390 - Val. Loss: 0.5409
+[42/1000] | Epoch Time: 0m 3s - Train Loss: 0.5706 - Val. Loss: 0.5448
+Checkpoint saved at epoch 42
+[42/1000] | Epoch Time: 0m 3s - Train Loss: 0.5590 - Val. Loss: 0.5362
+[43/1000] | Epoch Time: 0m 3s - Train Loss: 0.5606 - Val. Loss: 0.5413
+[43/1000] | Epoch Time: 0m 3s - Train Loss: 0.5478 - Val. Loss: 0.5306
+Checkpoint saved at epoch 43
+Checkpoint saved at epoch 43
+Checkpoint saved at epoch 43
+Checkpoint saved at epoch 43
+[44/1000] | Epoch Time: 0m 3s - Train Loss: 0.5680 - Val. Loss: 0.5441
+Checkpoint saved at epoch 44
+[44/1000] | Epoch Time: 0m 3s - Train Loss: 0.5531 - Val. Loss: 0.5389
+[45/1000] | Epoch Time: 0m 3s - Train Loss: 0.5501 - Val. Loss: 0.5375
+[45/1000] | Epoch Time: 0m 3s - Train Loss: 0.5416 - Val. Loss: 0.5315
+Checkpoint saved at epoch 45
+Checkpoint saved at epoch 45
+Checkpoint saved at epoch 45
+[46/1000] | Epoch Time: 0m 4s - Train Loss: 0.5434 - Val. Loss: 0.5253
+[46/1000] | Epoch Time: 0m 3s - Train Loss: 0.5587 - Val. Loss: 0.5407
+Checkpoint saved at epoch 46
+Checkpoint saved at epoch 46
+[47/1000] | Epoch Time: 0m 3s - Train Loss: 0.5444 - Val. Loss: 0.5212
+[47/1000] | Epoch Time: 0m 4s - Train Loss: 0.5591 - Val. Loss: 0.5344
+Checkpoint saved at epoch 47
+Checkpoint saved at epoch 47
+Checkpoint saved at epoch 47
+[48/1000] | Epoch Time: 0m 3s - Train Loss: 0.5296 - Val. Loss: 0.5337
+[48/1000] | Epoch Time: 0m 3s - Train Loss: 0.5469 - Val. Loss: 0.5352
+[49/1000] | Epoch Time: 0m 3s - Train Loss: 0.5463 - Val. Loss: 0.5158
+[49/1000] | Epoch Time: 0m 3s - Train Loss: 0.5570 - Val. Loss: 0.5269
+Checkpoint saved at epoch 49
+Checkpoint saved at epoch 49
+Checkpoint saved at epoch 49
+[50/1000] | Epoch Time: 0m 3s - Train Loss: 0.5473 - Val. Loss: 0.5156
+[50/1000] | Epoch Time: 0m 3s - Train Loss: 0.5563 - Val. Loss: 0.5292
+Checkpoint saved at epoch 50
+Checkpoint saved at epoch 50
+Checkpoint saved at epoch 50
+[51/1000] | Epoch Time: 0m 3s - Train Loss: 0.5418 - Val. Loss: 0.5261
+[51/1000] | Epoch Time: 0m 4s - Train Loss: 0.5502 - Val. Loss: 0.5258
+Checkpoint saved at epoch 51
+Checkpoint saved at epoch 51
+[52/1000] | Epoch Time: 0m 3s - Train Loss: 0.5372 - Val. Loss: 0.5145
+[52/1000] | Epoch Time: 0m 3s - Train Loss: 0.5414 - Val. Loss: 0.5187
+Checkpoint saved at epoch 52
+Checkpoint saved at epoch 52
+Checkpoint saved at epoch 52
+Checkpoint saved at epoch 52
+[53/1000] | Epoch Time: 0m 3s - Train Loss: 0.5277 - Val. Loss: 0.5126
+Checkpoint saved at epoch 53
+[53/1000] | Epoch Time: 0m 3s - Train Loss: 0.5311 - Val. Loss: 0.5226
+Checkpoint saved at epoch 53
+[54/1000] | Epoch Time: 0m 3s - Train Loss: 0.5254 - Val. Loss: 0.5112
+Checkpoint saved at epoch 54
+Checkpoint saved at epoch 54
+[54/1000] | Epoch Time: 0m 3s - Train Loss: 0.5382 - Val. Loss: 0.5189
+Checkpoint saved at epoch 54
+[55/1000] | Epoch Time: 0m 3s - Train Loss: 0.5467 - Val. Loss: 0.5151
+[55/1000] | Epoch Time: 0m 3s - Train Loss: 0.5509 - Val. Loss: 0.5186
+Checkpoint saved at epoch 55
+[56/1000] | Epoch Time: 0m 3s - Train Loss: 0.5313 - Val. Loss: 0.5133
+[56/1000] | Epoch Time: 0m 3s - Train Loss: 0.5379 - Val. Loss: 0.5133
+Checkpoint saved at epoch 56
+[57/1000] | Epoch Time: 0m 3s - Train Loss: 0.5189 - Val. Loss: 0.5100
+Checkpoint saved at epoch 57
+[57/1000] | Epoch Time: 0m 3s - Train Loss: 0.5351 - Val. Loss: 0.5244
+Checkpoint saved at epoch 57
+[58/1000] | Epoch Time: 0m 3s - Train Loss: 0.5304 - Val. Loss: 0.5046
+Checkpoint saved at epoch 58
+[58/1000] | Epoch Time: 0m 3s - Train Loss: 0.5404 - Val. Loss: 0.5157
+Checkpoint saved at epoch 58
+[59/1000] | Epoch Time: 0m 3s - Train Loss: 0.5308 - Val. Loss: 0.5167
+[59/1000] | Epoch Time: 0m 3s - Train Loss: 0.5399 - Val. Loss: 0.5224
+[60/1000] | Epoch Time: 0m 3s - Train Loss: 0.5219 - Val. Loss: 0.5017
+Checkpoint saved at epoch 60
+Checkpoint saved at epoch 60
+[60/1000] | Epoch Time: 0m 3s - Train Loss: 0.5259 - Val. Loss: 0.5091
+Checkpoint saved at epoch 60
+[61/1000] | Epoch Time: 0m 3s - Train Loss: 0.5170 - Val. Loss: 0.5008
+Checkpoint saved at epoch 61
+[61/1000] | Epoch Time: 0m 3s - Train Loss: 0.5268 - Val. Loss: 0.5080
+Checkpoint saved at epoch 61
+Checkpoint saved at epoch 61
+[62/1000] | Epoch Time: 0m 3s - Train Loss: 0.5359 - Val. Loss: 0.5015
+[62/1000] | Epoch Time: 0m 3s - Train Loss: 0.5388 - Val. Loss: 0.5088
+[63/1000] | Epoch Time: 0m 3s - Train Loss: 0.5362 - Val. Loss: 0.5036
+Checkpoint saved at epoch 63
+[63/1000] | Epoch Time: 0m 3s - Train Loss: 0.5438 - Val. Loss: 0.5111
+[64/1000] | Epoch Time: 0m 3s - Train Loss: 0.5236 - Val. Loss: 0.5092
+[64/1000] | Epoch Time: 0m 3s - Train Loss: 0.5364 - Val. Loss: 0.5145
+[65/1000] | Epoch Time: 0m 3s - Train Loss: 0.5233 - Val. Loss: 0.5087
+Checkpoint saved at epoch 65
+[65/1000] | Epoch Time: 0m 3s - Train Loss: 0.5320 - Val. Loss: 0.5121
+[66/1000] | Epoch Time: 0m 3s - Train Loss: 0.5248 - Val. Loss: 0.5024
+[66/1000] | Epoch Time: 0m 3s - Train Loss: 0.5314 - Val. Loss: 0.5320
+[67/1000] | Epoch Time: 0m 3s - Train Loss: 0.5109 - Val. Loss: 0.5052
+[67/1000] | Epoch Time: 0m 3s - Train Loss: 0.5271 - Val. Loss: 0.5135
+[68/1000] | Epoch Time: 0m 3s - Train Loss: 0.5073 - Val. Loss: 0.4981
+Checkpoint saved at epoch 68
+Checkpoint saved at epoch 68
+[68/1000] | Epoch Time: 0m 3s - Train Loss: 0.5225 - Val. Loss: 0.5113
+[69/1000] | Epoch Time: 0m 3s - Train Loss: 0.5104 - Val. Loss: 0.5081
+[69/1000] | Epoch Time: 0m 3s - Train Loss: 0.5214 - Val. Loss: 0.5106
+Checkpoint saved at epoch 69
+[70/1000] | Epoch Time: 0m 3s - Train Loss: 0.5225 - Val. Loss: 0.5089
+[70/1000] | Epoch Time: 0m 3s - Train Loss: 0.5298 - Val. Loss: 0.5142
+[71/1000] | Epoch Time: 0m 3s - Train Loss: 0.5298 - Val. Loss: 0.4988
+Checkpoint saved at epoch 71
+[71/1000] | Epoch Time: 0m 3s - Train Loss: 0.5418 - Val. Loss: 0.5127
+[72/1000] | Epoch Time: 0m 3s - Train Loss: 0.5297 - Val. Loss: 0.5144
+[72/1000] | Epoch Time: 0m 3s - Train Loss: 0.5339 - Val. Loss: 0.5055
+Checkpoint saved at epoch 72
+Checkpoint saved at epoch 72
+[73/1000] | Epoch Time: 0m 3s - Train Loss: 0.5087 - Val. Loss: 0.5040
+[73/1000] | Epoch Time: 0m 3s - Train Loss: 0.5172 - Val. Loss: 0.5084
+[74/1000] | Epoch Time: 0m 3s - Train Loss: 0.5124 - Val. Loss: 0.4958
+Checkpoint saved at epoch 74
+Checkpoint saved at epoch 74
+[74/1000] | Epoch Time: 0m 3s - Train Loss: 0.5145 - Val. Loss: 0.5088
+[75/1000] | Epoch Time: 0m 3s - Train Loss: 0.5054 - Val. Loss: 0.4984
+[75/1000] | Epoch Time: 0m 3s - Train Loss: 0.5063 - Val. Loss: 0.5063
+[76/1000] | Epoch Time: 0m 3s - Train Loss: 0.5133 - Val. Loss: 0.4942
+Checkpoint saved at epoch 76
+Checkpoint saved at epoch 76
+[76/1000] | Epoch Time: 0m 3s - Train Loss: 0.5188 - Val. Loss: 0.5030
+Checkpoint saved at epoch 76
+[77/1000] | Epoch Time: 0m 3s - Train Loss: 0.5053 - Val. Loss: 0.4961
+[77/1000] | Epoch Time: 0m 3s - Train Loss: 0.5206 - Val. Loss: 0.5053
+[78/1000] | Epoch Time: 0m 3s - Train Loss: 0.5053 - Val. Loss: 0.5004
+[78/1000] | Epoch Time: 0m 3s - Train Loss: 0.5171 - Val. Loss: 0.5057
+[79/1000] | Epoch Time: 0m 3s - Train Loss: 0.5237 - Val. Loss: 0.5047
+[79/1000] | Epoch Time: 0m 3s - Train Loss: 0.5382 - Val. Loss: 0.4998
+Checkpoint saved at epoch 79
+[80/1000] | Epoch Time: 0m 3s - Train Loss: 0.5058 - Val. Loss: 0.5012
+[80/1000] | Epoch Time: 0m 3s - Train Loss: 0.5168 - Val. Loss: 0.5040
+[81/1000] | Epoch Time: 0m 3s - Train Loss: 0.5087 - Val. Loss: 0.5025
+[81/1000] | Epoch Time: 0m 3s - Train Loss: 0.5232 - Val. Loss: 0.5028
+Checkpoint saved at epoch 81
+[82/1000] | Epoch Time: 0m 3s - Train Loss: 0.5065 - Val. Loss: 0.5071
+[82/1000] | Epoch Time: 0m 3s - Train Loss: 0.5135 - Val. Loss: 0.5048
+[83/1000] | Epoch Time: 0m 3s - Train Loss: 0.5163 - Val. Loss: 0.5028
+[83/1000] | Epoch Time: 0m 3s - Train Loss: 0.5212 - Val. Loss: 0.5096
+[84/1000] | Epoch Time: 0m 3s - Train Loss: 0.5073 - Val. Loss: 0.5123
+[84/1000] | Epoch Time: 0m 3s - Train Loss: 0.5168 - Val. Loss: 0.5057
+Checkpoint saved at epoch 84
+[85/1000] | Epoch Time: 0m 3s - Train Loss: 0.4941 - Val. Loss: 0.4943
+[85/1000] | Epoch Time: 0m 3s - Train Loss: 0.5082 - Val. Loss: 0.4995
+Checkpoint saved at epoch 85
+[86/1000] | Epoch Time: 0m 3s - Train Loss: 0.5116 - Val. Loss: 0.4991
+[86/1000] | Epoch Time: 0m 3s - Train Loss: 0.5262 - Val. Loss: 0.5038
+[87/1000] | Epoch Time: 0m 3s - Train Loss: 0.5049 - Val. Loss: 0.5066
+Checkpoint saved at epoch 86
+[87/1000] | Epoch Time: 0m 3s - Train Loss: 0.5121 - Val. Loss: 0.5124
+[88/1000] | Epoch Time: 0m 3s - Train Loss: 0.5009 - Val. Loss: 0.4983
+[88/1000] | Epoch Time: 0m 3s - Train Loss: 0.5157 - Val. Loss: 0.5099
+[89/1000] | Epoch Time: 0m 3s - Train Loss: 0.5015 - Val. Loss: 0.4974
+Checkpoint saved at epoch 89
+[89/1000] | Epoch Time: 0m 3s - Train Loss: 0.5232 - Val. Loss: 0.5026
+[90/1000] | Epoch Time: 0m 3s - Train Loss: 0.4900 - Val. Loss: 0.4984
+Checkpoint saved at epoch 90
+[90/1000] | Epoch Time: 0m 3s - Train Loss: 0.5152 - Val. Loss: 0.4914
+Checkpoint saved at epoch 90
+Checkpoint saved at epoch 90
+[91/1000] | Epoch Time: 0m 3s - Train Loss: 0.4856 - Val. Loss: 0.5003
+[91/1000] | Epoch Time: 0m 3s - Train Loss: 0.5059 - Val. Loss: 0.5006
+[92/1000] | Epoch Time: 0m 3s - Train Loss: 0.4913 - Val. Loss: 0.4912
+Checkpoint saved at epoch 91
+Checkpoint saved at epoch 92
+[92/1000] | Epoch Time: 0m 3s - Train Loss: 0.5070 - Val. Loss: 0.5018
+[93/1000] | Epoch Time: 0m 3s - Train Loss: 0.5002 - Val. Loss: 0.4876
+Checkpoint saved at epoch 92
+Checkpoint saved at epoch 93
+Checkpoint saved at epoch 93
+[93/1000] | Epoch Time: 0m 3s - Train Loss: 0.5259 - Val. Loss: 0.5118
+[94/1000] | Epoch Time: 0m 3s - Train Loss: 0.4960 - Val. Loss: 0.4978
+[94/1000] | Epoch Time: 0m 3s - Train Loss: 0.5311 - Val. Loss: 0.5103
+[95/1000] | Epoch Time: 0m 3s - Train Loss: 0.4909 - Val. Loss: 0.4921
+Checkpoint saved at epoch 95
+[95/1000] | Epoch Time: 0m 3s - Train Loss: 0.5229 - Val. Loss: 0.5011
+[96/1000] | Epoch Time: 0m 3s - Train Loss: 0.4990 - Val. Loss: 0.4924
+[96/1000] | Epoch Time: 0m 3s - Train Loss: 0.5226 - Val. Loss: 0.5044
+Checkpoint saved at epoch 96
+[97/1000] | Epoch Time: 0m 3s - Train Loss: 0.4804 - Val. Loss: 0.4953
+[97/1000] | Epoch Time: 0m 3s - Train Loss: 0.5024 - Val. Loss: 0.5083
+[98/1000] | Epoch Time: 0m 3s - Train Loss: 0.4950 - Val. Loss: 0.4880
+[98/1000] | Epoch Time: 0m 3s - Train Loss: 0.5267 - Val. Loss: 0.5044
+[99/1000] | Epoch Time: 0m 3s - Train Loss: 0.4679 - Val. Loss: 0.4979
+[99/1000] | Epoch Time: 0m 3s - Train Loss: 0.4956 - Val. Loss: 0.4989
+[100/1000] | Epoch Time: 0m 3s - Train Loss: 0.4876 - Val. Loss: 0.4972
+[100/1000] | Epoch Time: 0m 3s - Train Loss: 0.5133 - Val. Loss: 0.5052
+[101/1000] | Epoch Time: 0m 3s - Train Loss: 0.4833 - Val. Loss: 0.4963
+[101/1000] | Epoch Time: 0m 3s - Train Loss: 0.5201 - Val. Loss: 0.4950
+[102/1000] | Epoch Time: 0m 3s - Train Loss: 0.4832 - Val. Loss: 0.4967
+Checkpoint saved at epoch 102
+[102/1000] | Epoch Time: 0m 3s - Train Loss: 0.5001 - Val. Loss: 0.4889
+Checkpoint saved at epoch 102
+[103/1000] | Epoch Time: 0m 3s - Train Loss: 0.4793 - Val. Loss: 0.4985
+[103/1000] | Epoch Time: 0m 3s - Train Loss: 0.4975 - Val. Loss: 0.4905
+[104/1000] | Epoch Time: 0m 3s - Train Loss: 0.4838 - Val. Loss: 0.4880
+[104/1000] | Epoch Time: 0m 3s - Train Loss: 0.5038 - Val. Loss: 0.4914
+[105/1000] | Epoch Time: 0m 3s - Train Loss: 0.4782 - Val. Loss: 0.4880
+[105/1000] | Epoch Time: 0m 3s - Train Loss: 0.4931 - Val. Loss: 0.4866
+[106/1000] | Epoch Time: 0m 3s - Train Loss: 0.4742 - Val. Loss: 0.4908
+Checkpoint saved at epoch 105
+[107/1000] | Epoch Time: 0m 3s - Train Loss: 0.4771 - Val. Loss: 0.4859
+[106/1000] | Epoch Time: 0m 3s - Train Loss: 0.4954 - Val. Loss: 0.4895
+Checkpoint saved at epoch 107
+[107/1000] | Epoch Time: 0m 3s - Train Loss: 0.4996 - Val. Loss: 0.4869
+[108/1000] | Epoch Time: 0m 3s - Train Loss: 0.4845 - Val. Loss: 0.4871
+[108/1000] | Epoch Time: 0m 3s - Train Loss: 0.5096 - Val. Loss: 0.4902
+[109/1000] | Epoch Time: 0m 3s - Train Loss: 0.4801 - Val. Loss: 0.4861
+[109/1000] | Epoch Time: 0m 3s - Train Loss: 0.5030 - Val. Loss: 0.4915
+[110/1000] | Epoch Time: 0m 3s - Train Loss: 0.4832 - Val. Loss: 0.4861
+[110/1000] | Epoch Time: 0m 3s - Train Loss: 0.5028 - Val. Loss: 0.4874
+[111/1000] | Epoch Time: 0m 3s - Train Loss: 0.4771 - Val. Loss: 0.4890
+[111/1000] | Epoch Time: 0m 3s - Train Loss: 0.5010 - Val. Loss: 0.4934
+[112/1000] | Epoch Time: 0m 3s - Train Loss: 0.4723 - Val. Loss: 0.4905
+[112/1000] | Epoch Time: 0m 3s - Train Loss: 0.5003 - Val. Loss: 0.4972
+[113/1000] | Epoch Time: 0m 3s - Train Loss: 0.4702 - Val. Loss: 0.4858
+Checkpoint saved at epoch 113
+[113/1000] | Epoch Time: 0m 3s - Train Loss: 0.5073 - Val. Loss: 0.4960
+[114/1000] | Epoch Time: 0m 3s - Train Loss: 0.4810 - Val. Loss: 0.4872
+[114/1000] | Epoch Time: 0m 3s - Train Loss: 0.5031 - Val. Loss: 0.4897
+[115/1000] | Epoch Time: 0m 3s - Train Loss: 0.4596 - Val. Loss: 0.4848
+Checkpoint saved at epoch 115
+[115/1000] | Epoch Time: 0m 3s - Train Loss: 0.4850 - Val. Loss: 0.4929
+[116/1000] | Epoch Time: 0m 3s - Train Loss: 0.4647 - Val. Loss: 0.4906
+[116/1000] | Epoch Time: 0m 3s - Train Loss: 0.4905 - Val. Loss: 0.4968
+[117/1000] | Epoch Time: 0m 3s - Train Loss: 0.4673 - Val. Loss: 0.4934
+[117/1000] | Epoch Time: 0m 3s - Train Loss: 0.4871 - Val. Loss: 0.4897
+[118/1000] | Epoch Time: 0m 3s - Train Loss: 0.4650 - Val. Loss: 0.4888
+[118/1000] | Epoch Time: 0m 3s - Train Loss: 0.4854 - Val. Loss: 0.4900
+Checkpoint saved at epoch 118
+[119/1000] | Epoch Time: 0m 3s - Train Loss: 0.4711 - Val. Loss: 0.4886
+[119/1000] | Epoch Time: 0m 3s - Train Loss: 0.4846 - Val. Loss: 0.4918
+[120/1000] | Epoch Time: 0m 3s - Train Loss: 0.4763 - Val. Loss: 0.4911
+[120/1000] | Epoch Time: 0m 3s - Train Loss: 0.4929 - Val. Loss: 0.4908
+[121/1000] | Epoch Time: 0m 3s - Train Loss: 0.4607 - Val. Loss: 0.4886
+[121/1000] | Epoch Time: 0m 3s - Train Loss: 0.4821 - Val. Loss: 0.4921
+[122/1000] | Epoch Time: 0m 3s - Train Loss: 0.4751 - Val. Loss: 0.4898
+[122/1000] | Epoch Time: 0m 3s - Train Loss: 0.4890 - Val. Loss: 0.4897
+[123/1000] | Epoch Time: 0m 3s - Train Loss: 0.4708 - Val. Loss: 0.4883
+Checkpoint saved at epoch 123
+[123/1000] | Epoch Time: 0m 3s - Train Loss: 0.4872 - Val. Loss: 0.4910
+[124/1000] | Epoch Time: 0m 3s - Train Loss: 0.4720 - Val. Loss: 0.4869
+[124/1000] | Epoch Time: 0m 3s - Train Loss: 0.4882 - Val. Loss: 0.4928
+[125/1000] | Epoch Time: 0m 3s - Train Loss: 0.4607 - Val. Loss: 0.4932
+[125/1000] | Epoch Time: 0m 3s - Train Loss: 0.4780 - Val. Loss: 0.4894
+[126/1000] | Epoch Time: 0m 3s - Train Loss: 0.4490 - Val. Loss: 0.4896
+[126/1000] | Epoch Time: 0m 3s - Train Loss: 0.4647 - Val. Loss: 0.4849
+[127/1000] | Epoch Time: 0m 3s - Train Loss: 0.4823 - Val. Loss: 0.4869
+Checkpoint saved at epoch 126
+[128/1000] | Epoch Time: 0m 3s - Train Loss: 0.4604 - Val. Loss: 0.4885
+[127/1000] | Epoch Time: 0m 3s - Train Loss: 0.4813 - Val. Loss: 0.4862
+[129/1000] | Epoch Time: 0m 3s - Train Loss: 0.4593 - Val. Loss: 0.4852
+[128/1000] | Epoch Time: 0m 3s - Train Loss: 0.4756 - Val. Loss: 0.4903
+[130/1000] | Epoch Time: 0m 3s - Train Loss: 0.4631 - Val. Loss: 0.4843
+[129/1000] | Epoch Time: 0m 3s - Train Loss: 0.4792 - Val. Loss: 0.4868
+Checkpoint saved at epoch 130
+[130/1000] | Epoch Time: 0m 3s - Train Loss: 0.4841 - Val. Loss: 0.4970
+[131/1000] | Epoch Time: 0m 3s - Train Loss: 0.4579 - Val. Loss: 0.4859
+[131/1000] | Epoch Time: 0m 3s - Train Loss: 0.4827 - Val. Loss: 0.4887
+[132/1000] | Epoch Time: 0m 3s - Train Loss: 0.4592 - Val. Loss: 0.4818
+Checkpoint saved at epoch 132
+[132/1000] | Epoch Time: 0m 3s - Train Loss: 0.4791 - Val. Loss: 0.4891
+[133/1000] | Epoch Time: 0m 3s - Train Loss: 0.4542 - Val. Loss: 0.4862
+[133/1000] | Epoch Time: 0m 3s - Train Loss: 0.4828 - Val. Loss: 0.4871
+[134/1000] | Epoch Time: 0m 3s - Train Loss: 0.4573 - Val. Loss: 0.4843
+[134/1000] | Epoch Time: 0m 3s - Train Loss: 0.4811 - Val. Loss: 0.4878
+[135/1000] | Epoch Time: 0m 3s - Train Loss: 0.4594 - Val. Loss: 0.4886
+[135/1000] | Epoch Time: 0m 3s - Train Loss: 0.4770 - Val. Loss: 0.4868
+[136/1000] | Epoch Time: 0m 3s - Train Loss: 0.4503 - Val. Loss: 0.4811
+Checkpoint saved at epoch 136
+[136/1000] | Epoch Time: 0m 3s - Train Loss: 0.4782 - Val. Loss: 0.4911
+[137/1000] | Epoch Time: 0m 3s - Train Loss: 0.4514 - Val. Loss: 0.4802
+Checkpoint saved at epoch 137
+[137/1000] | Epoch Time: 0m 3s - Train Loss: 0.4808 - Val. Loss: 0.4879
+[138/1000] | Epoch Time: 0m 3s - Train Loss: 0.4707 - Val. Loss: 0.4879
+[138/1000] | Epoch Time: 0m 3s - Train Loss: 0.4919 - Val. Loss: 0.4828
+Checkpoint saved at epoch 138
+[139/1000] | Epoch Time: 0m 3s - Train Loss: 0.4590 - Val. Loss: 0.4785
+Checkpoint saved at epoch 139
+[139/1000] | Epoch Time: 0m 3s - Train Loss: 0.4785 - Val. Loss: 0.4817
+Checkpoint saved at epoch 139
+Checkpoint saved at epoch 139
+[140/1000] | Epoch Time: 0m 3s - Train Loss: 0.4484 - Val. Loss: 0.4821
+[140/1000] | Epoch Time: 0m 3s - Train Loss: 0.4660 - Val. Loss: 0.4822
+[141/1000] | Epoch Time: 0m 3s - Train Loss: 0.4569 - Val. Loss: 0.4878
+[141/1000] | Epoch Time: 0m 3s - Train Loss: 0.4729 - Val. Loss: 0.4828
+[142/1000] | Epoch Time: 0m 3s - Train Loss: 0.4628 - Val. Loss: 0.4850
+[142/1000] | Epoch Time: 0m 3s - Train Loss: 0.4793 - Val. Loss: 0.4815
+[143/1000] | Epoch Time: 0m 3s - Train Loss: 0.4643 - Val. Loss: 0.4828
+Checkpoint saved at epoch 142
+[144/1000] | Epoch Time: 0m 3s - Train Loss: 0.4566 - Val. Loss: 0.4859
+[143/1000] | Epoch Time: 0m 3s - Train Loss: 0.4760 - Val. Loss: 0.4872
+[145/1000] | Epoch Time: 0m 3s - Train Loss: 0.4685 - Val. Loss: 0.4850
+[144/1000] | Epoch Time: 0m 3s - Train Loss: 0.4681 - Val. Loss: 0.4807
+Checkpoint saved at epoch 144
+Checkpoint saved at epoch 144
+[146/1000] | Epoch Time: 0m 3s - Train Loss: 0.4708 - Val. Loss: 0.4857
+Checkpoint saved at epoch 146
+[145/1000] | Epoch Time: 0m 3s - Train Loss: 0.4824 - Val. Loss: 0.4863
+[147/1000] | Epoch Time: 0m 3s - Train Loss: 0.4554 - Val. Loss: 0.4858
+[146/1000] | Epoch Time: 0m 3s - Train Loss: 0.4815 - Val. Loss: 0.4827
+[148/1000] | Epoch Time: 0m 3s - Train Loss: 0.4573 - Val. Loss: 0.4827
+[147/1000] | Epoch Time: 0m 3s - Train Loss: 0.4714 - Val. Loss: 0.4865
+[149/1000] | Epoch Time: 0m 3s - Train Loss: 0.4614 - Val. Loss: 0.4825
+[148/1000] | Epoch Time: 0m 3s - Train Loss: 0.4812 - Val. Loss: 0.4850
+[150/1000] | Epoch Time: 0m 3s - Train Loss: 0.4525 - Val. Loss: 0.4891
+[149/1000] | Epoch Time: 0m 3s - Train Loss: 0.4721 - Val. Loss: 0.4845
+[151/1000] | Epoch Time: 0m 3s - Train Loss: 0.4484 - Val. Loss: 0.4831
+[150/1000] | Epoch Time: 0m 3s - Train Loss: 0.4710 - Val. Loss: 0.4860
+[152/1000] | Epoch Time: 0m 3s - Train Loss: 0.4569 - Val. Loss: 0.4819
+[151/1000] | Epoch Time: 0m 3s - Train Loss: 0.4637 - Val. Loss: 0.4809
+[153/1000] | Epoch Time: 0m 3s - Train Loss: 0.4548 - Val. Loss: 0.4796
+[152/1000] | Epoch Time: 0m 3s - Train Loss: 0.4664 - Val. Loss: 0.4851
+[154/1000] | Epoch Time: 0m 3s - Train Loss: 0.4634 - Val. Loss: 0.4832
+[153/1000] | Epoch Time: 0m 3s - Train Loss: 0.4729 - Val. Loss: 0.4884
+[155/1000] | Epoch Time: 0m 3s - Train Loss: 0.4559 - Val. Loss: 0.4813
+Checkpoint saved at epoch 155
+[154/1000] | Epoch Time: 0m 3s - Train Loss: 0.4768 - Val. Loss: 0.4880
+[156/1000] | Epoch Time: 0m 3s - Train Loss: 0.4466 - Val. Loss: 0.4818
+[155/1000] | Epoch Time: 0m 3s - Train Loss: 0.4717 - Val. Loss: 0.4828
+[157/1000] | Epoch Time: 0m 3s - Train Loss: 0.4592 - Val. Loss: 0.4824
+[156/1000] | Epoch Time: 0m 3s - Train Loss: 0.4661 - Val. Loss: 0.4789
+Checkpoint saved at epoch 156
+[158/1000] | Epoch Time: 0m 3s - Train Loss: 0.4579 - Val. Loss: 0.4836
+[157/1000] | Epoch Time: 0m 3s - Train Loss: 0.4630 - Val. Loss: 0.4846
+[159/1000] | Epoch Time: 0m 3s - Train Loss: 0.4365 - Val. Loss: 0.4874
+[158/1000] | Epoch Time: 0m 3s - Train Loss: 0.4745 - Val. Loss: 0.4821
+[160/1000] | Epoch Time: 0m 3s - Train Loss: 0.4558 - Val. Loss: 0.4843
+[159/1000] | Epoch Time: 0m 3s - Train Loss: 0.4471 - Val. Loss: 0.4832
+[161/1000] | Epoch Time: 0m 3s - Train Loss: 0.4415 - Val. Loss: 0.4822
+Checkpoint saved at epoch 161
+[160/1000] | Epoch Time: 0m 3s - Train Loss: 0.4714 - Val. Loss: 0.4836
+[162/1000] | Epoch Time: 0m 3s - Train Loss: 0.4559 - Val. Loss: 0.4830
+[161/1000] | Epoch Time: 0m 3s - Train Loss: 0.4628 - Val. Loss: 0.4826
+[163/1000] | Epoch Time: 0m 3s - Train Loss: 0.4529 - Val. Loss: 0.4831
+[162/1000] | Epoch Time: 0m 3s - Train Loss: 0.4696 - Val. Loss: 0.4843
+[164/1000] | Epoch Time: 0m 3s - Train Loss: 0.4476 - Val. Loss: 0.4844
+[163/1000] | Epoch Time: 0m 3s - Train Loss: 0.4695 - Val. Loss: 0.4854
+[165/1000] | Epoch Time: 0m 3s - Train Loss: 0.4490 - Val. Loss: 0.4837
+[164/1000] | Epoch Time: 0m 3s - Train Loss: 0.4568 - Val. Loss: 0.4845
+Checkpoint saved at epoch 164
+[166/1000] | Epoch Time: 0m 3s - Train Loss: 0.4480 - Val. Loss: 0.4832
+[165/1000] | Epoch Time: 0m 3s - Train Loss: 0.4655 - Val. Loss: 0.4866
+[167/1000] | Epoch Time: 0m 3s - Train Loss: 0.4459 - Val. Loss: 0.4843
+[166/1000] | Epoch Time: 0m 3s - Train Loss: 0.4593 - Val. Loss: 0.4873
+[168/1000] | Epoch Time: 0m 3s - Train Loss: 0.4452 - Val. Loss: 0.4843
+[167/1000] | Epoch Time: 0m 3s - Train Loss: 0.4748 - Val. Loss: 0.4831
+[169/1000] | Epoch Time: 0m 3s - Train Loss: 0.4336 - Val. Loss: 0.4846
+[168/1000] | Epoch Time: 0m 3s - Train Loss: 0.4613 - Val. Loss: 0.4844
+[170/1000] | Epoch Time: 0m 3s - Train Loss: 0.4411 - Val. Loss: 0.4837
+[169/1000] | Epoch Time: 0m 3s - Train Loss: 0.4557 - Val. Loss: 0.4824
+[171/1000] | Epoch Time: 0m 3s - Train Loss: 0.4580 - Val. Loss: 0.4834
+[170/1000] | Epoch Time: 0m 3s - Train Loss: 0.4551 - Val. Loss: 0.4825
+[172/1000] | Epoch Time: 0m 3s - Train Loss: 0.4553 - Val. Loss: 0.4838
+[171/1000] | Epoch Time: 0m 3s - Train Loss: 0.4761 - Val. Loss: 0.4839
+[173/1000] | Epoch Time: 0m 3s - Train Loss: 0.4527 - Val. Loss: 0.4838
+[172/1000] | Epoch Time: 0m 3s - Train Loss: 0.4623 - Val. Loss: 0.4804
+[174/1000] | Epoch Time: 0m 3s - Train Loss: 0.4307 - Val. Loss: 0.4838
+[173/1000] | Epoch Time: 0m 3s - Train Loss: 0.4669 - Val. Loss: 0.4860
+[175/1000] | Epoch Time: 0m 3s - Train Loss: 0.4454 - Val. Loss: 0.4829
+[174/1000] | Epoch Time: 0m 3s - Train Loss: 0.4504 - Val. Loss: 0.4837
+[176/1000] | Epoch Time: 0m 3s - Train Loss: 0.4514 - Val. Loss: 0.4837
+[175/1000] | Epoch Time: 0m 3s - Train Loss: 0.4617 - Val. Loss: 0.4804
+[177/1000] | Epoch Time: 0m 3s - Train Loss: 0.4499 - Val. Loss: 0.4852
+[176/1000] | Epoch Time: 0m 3s - Train Loss: 0.4641 - Val. Loss: 0.4849
+[178/1000] | Epoch Time: 0m 3s - Train Loss: 0.4347 - Val. Loss: 0.4843
+[177/1000] | Epoch Time: 0m 3s - Train Loss: 0.4592 - Val. Loss: 0.4850
+[179/1000] | Epoch Time: 0m 3s - Train Loss: 0.4526 - Val. Loss: 0.4820
+[178/1000] | Epoch Time: 0m 3s - Train Loss: 0.4485 - Val. Loss: 0.4834
+[180/1000] | Epoch Time: 0m 3s - Train Loss: 0.4568 - Val. Loss: 0.4826
+[179/1000] | Epoch Time: 0m 3s - Train Loss: 0.4754 - Val. Loss: 0.4831
+[181/1000] | Epoch Time: 0m 3s - Train Loss: 0.4484 - Val. Loss: 0.4829
+[180/1000] | Epoch Time: 0m 3s - Train Loss: 0.4709 - Val. Loss: 0.4836
+[182/1000] | Epoch Time: 0m 3s - Train Loss: 0.4439 - Val. Loss: 0.4834
+[181/1000] | Epoch Time: 0m 3s - Train Loss: 0.4618 - Val. Loss: 0.4839
+[183/1000] | Epoch Time: 0m 3s - Train Loss: 0.4561 - Val. Loss: 0.4829
+[182/1000] | Epoch Time: 0m 3s - Train Loss: 0.4605 - Val. Loss: 0.4830
+[184/1000] | Epoch Time: 0m 3s - Train Loss: 0.4312 - Val. Loss: 0.4830
+[183/1000] | Epoch Time: 0m 3s - Train Loss: 0.4723 - Val. Loss: 0.4844
+[185/1000] | Epoch Time: 0m 3s - Train Loss: 0.4417 - Val. Loss: 0.4827
+[184/1000] | Epoch Time: 0m 3s - Train Loss: 0.4519 - Val. Loss: 0.4843
+[186/1000] | Epoch Time: 0m 3s - Train Loss: 0.4543 - Val. Loss: 0.4825
+[185/1000] | Epoch Time: 0m 3s - Train Loss: 0.4566 - Val. Loss: 0.4843
+[187/1000] | Epoch Time: 0m 3s - Train Loss: 0.4485 - Val. Loss: 0.4829
+[186/1000] | Epoch Time: 0m 3s - Train Loss: 0.4721 - Val. Loss: 0.4839
+[188/1000] | Epoch Time: 0m 3s - Train Loss: 0.4302 - Val. Loss: 0.4832
+[187/1000] | Epoch Time: 0m 3s - Train Loss: 0.4602 - Val. Loss: 0.4835
+[189/1000] | Epoch Time: 0m 3s - Train Loss: 0.4574 - Val. Loss: 0.4830
+[188/1000] | Epoch Time: 0m 3s - Train Loss: 0.4497 - Val. Loss: 0.4846
+[190/1000] | Epoch Time: 0m 3s - Train Loss: 0.4440 - Val. Loss: 0.4827
+[189/1000] | Epoch Time: 0m 3s - Train Loss: 0.4720 - Val. Loss: 0.4842
+[191/1000] | Epoch Time: 0m 3s - Train Loss: 0.4408 - Val. Loss: 0.4829
+[190/1000] | Epoch Time: 0m 3s - Train Loss: 0.4613 - Val. Loss: 0.4841
+[192/1000] | Epoch Time: 0m 3s - Train Loss: 0.4441 - Val. Loss: 0.4831
+[191/1000] | Epoch Time: 0m 3s - Train Loss: 0.4608 - Val. Loss: 0.4839
+[193/1000] | Epoch Time: 0m 3s - Train Loss: 0.4527 - Val. Loss: 0.4830
+[192/1000] | Epoch Time: 0m 3s - Train Loss: 0.4604 - Val. Loss: 0.4838
+[194/1000] | Epoch Time: 0m 3s - Train Loss: 0.4374 - Val. Loss: 0.4825
+[193/1000] | Epoch Time: 0m 3s - Train Loss: 0.4696 - Val. Loss: 0.4838
+[195/1000] | Epoch Time: 0m 3s - Train Loss: 0.4407 - Val. Loss: 0.4827
+[194/1000] | Epoch Time: 0m 3s - Train Loss: 0.4544 - Val. Loss: 0.4840
+[196/1000] | Epoch Time: 0m 3s - Train Loss: 0.4535 - Val. Loss: 0.4827
+[195/1000] | Epoch Time: 0m 3s - Train Loss: 0.4553 - Val. Loss: 0.4841
+[197/1000] | Epoch Time: 0m 3s - Train Loss: 0.4435 - Val. Loss: 0.4830
+[196/1000] | Epoch Time: 0m 3s - Train Loss: 0.4722 - Val. Loss: 0.4841
+[198/1000] | Epoch Time: 0m 3s - Train Loss: 0.4468 - Val. Loss: 0.4829
+[197/1000] | Epoch Time: 0m 3s - Train Loss: 0.4557 - Val. Loss: 0.4838
+[199/1000] | Epoch Time: 0m 3s - Train Loss: 0.4541 - Val. Loss: 0.4826
+[198/1000] | Epoch Time: 0m 3s - Train Loss: 0.4556 - Val. Loss: 0.4834
+[200/1000] | Epoch Time: 0m 3s - Train Loss: 0.4494 - Val. Loss: 0.4825
+[199/1000] | Epoch Time: 0m 3s - Train Loss: 0.4635 - Val. Loss: 0.4831
+[201/1000] | Epoch Time: 0m 3s - Train Loss: 0.4549 - Val. Loss: 0.4824
+[200/1000] | Epoch Time: 0m 3s - Train Loss: 0.4581 - Val. Loss: 0.4828
+[202/1000] | Epoch Time: 0m 3s - Train Loss: 0.4376 - Val. Loss: 0.4826
+[201/1000] | Epoch Time: 0m 3s - Train Loss: 0.4659 - Val. Loss: 0.4828
+[203/1000] | Epoch Time: 0m 3s - Train Loss: 0.4285 - Val. Loss: 0.4826
+[202/1000] | Epoch Time: 0m 3s - Train Loss: 0.4553 - Val. Loss: 0.4827
+[204/1000] | Epoch Time: 0m 3s - Train Loss: 0.4395 - Val. Loss: 0.4827
+[203/1000] | Epoch Time: 0m 3s - Train Loss: 0.4544 - Val. Loss: 0.4825
+[205/1000] | Epoch Time: 0m 3s - Train Loss: 0.4537 - Val. Loss: 0.4827
+[204/1000] | Epoch Time: 0m 3s - Train Loss: 0.4567 - Val. Loss: 0.4824
+[206/1000] | Epoch Time: 0m 3s - Train Loss: 0.4424 - Val. Loss: 0.4828
+[205/1000] | Epoch Time: 0m 3s - Train Loss: 0.4729 - Val. Loss: 0.4828
+[207/1000] | Epoch Time: 0m 3s - Train Loss: 0.4593 - Val. Loss: 0.4828
+[206/1000] | Epoch Time: 0m 3s - Train Loss: 0.4598 - Val. Loss: 0.4831
+[208/1000] | Epoch Time: 0m 3s - Train Loss: 0.4477 - Val. Loss: 0.4826
+[207/1000] | Epoch Time: 0m 3s - Train Loss: 0.4663 - Val. Loss: 0.4828
+[209/1000] | Epoch Time: 0m 3s - Train Loss: 0.4448 - Val. Loss: 0.4826
+[208/1000] | Epoch Time: 0m 3s - Train Loss: 0.4523 - Val. Loss: 0.4827
+[210/1000] | Epoch Time: 0m 3s - Train Loss: 0.4476 - Val. Loss: 0.4827
+[209/1000] | Epoch Time: 0m 3s - Train Loss: 0.4651 - Val. Loss: 0.4829
+[211/1000] | Epoch Time: 0m 3s - Train Loss: 0.4480 - Val. Loss: 0.4829
+[210/1000] | Epoch Time: 0m 3s - Train Loss: 0.4605 - Val. Loss: 0.4832
+[212/1000] | Epoch Time: 0m 3s - Train Loss: 0.4433 - Val. Loss: 0.4830
+[211/1000] | Epoch Time: 0m 3s - Train Loss: 0.4643 - Val. Loss: 0.4834
+[213/1000] | Epoch Time: 0m 3s - Train Loss: 0.4337 - Val. Loss: 0.4830
+[212/1000] | Epoch Time: 0m 3s - Train Loss: 0.4628 - Val. Loss: 0.4834
+[214/1000] | Epoch Time: 0m 3s - Train Loss: 0.4565 - Val. Loss: 0.4829
+[213/1000] | Epoch Time: 0m 3s - Train Loss: 0.4487 - Val. Loss: 0.4834
+[215/1000] | Epoch Time: 0m 3s - Train Loss: 0.4495 - Val. Loss: 0.4830
+[214/1000] | Epoch Time: 0m 3s - Train Loss: 0.4708 - Val. Loss: 0.4833
+[216/1000] | Epoch Time: 0m 3s - Train Loss: 0.4493 - Val. Loss: 0.4828
+[215/1000] | Epoch Time: 0m 3s - Train Loss: 0.4686 - Val. Loss: 0.4834
+[217/1000] | Epoch Time: 0m 3s - Train Loss: 0.4323 - Val. Loss: 0.4831
+[216/1000] | Epoch Time: 0m 3s - Train Loss: 0.4582 - Val. Loss: 0.4833
+[218/1000] | Epoch Time: 0m 3s - Train Loss: 0.4515 - Val. Loss: 0.4832
+[217/1000] | Epoch Time: 0m 3s - Train Loss: 0.4489 - Val. Loss: 0.4833
+[219/1000] | Epoch Time: 0m 3s - Train Loss: 0.4461 - Val. Loss: 0.4833
+[218/1000] | Epoch Time: 0m 3s - Train Loss: 0.4566 - Val. Loss: 0.4833
+[220/1000] | Epoch Time: 0m 3s - Train Loss: 0.4445 - Val. Loss: 0.4831
+[219/1000] | Epoch Time: 0m 3s - Train Loss: 0.4648 - Val. Loss: 0.4833
+[221/1000] | Epoch Time: 0m 3s - Train Loss: 0.4363 - Val. Loss: 0.4828
+[220/1000] | Epoch Time: 0m 3s - Train Loss: 0.4563 - Val. Loss: 0.4833
+[222/1000] | Epoch Time: 0m 3s - Train Loss: 0.4480 - Val. Loss: 0.4828
+[221/1000] | Epoch Time: 0m 3s - Train Loss: 0.4553 - Val. Loss: 0.4833
+[223/1000] | Epoch Time: 0m 3s - Train Loss: 0.4502 - Val. Loss: 0.4827
+[222/1000] | Epoch Time: 0m 3s - Train Loss: 0.4650 - Val. Loss: 0.4832
+[224/1000] | Epoch Time: 0m 3s - Train Loss: 0.4403 - Val. Loss: 0.4826
+[223/1000] | Epoch Time: 0m 3s - Train Loss: 0.4641 - Val. Loss: 0.4832
+[225/1000] | Epoch Time: 0m 3s - Train Loss: 0.4493 - Val. Loss: 0.4826
+[224/1000] | Epoch Time: 0m 3s - Train Loss: 0.4548 - Val. Loss: 0.4832
+[226/1000] | Epoch Time: 0m 3s - Train Loss: 0.4498 - Val. Loss: 0.4826
+[225/1000] | Epoch Time: 0m 3s - Train Loss: 0.4602 - Val. Loss: 0.4832
+[227/1000] | Epoch Time: 0m 3s - Train Loss: 0.4510 - Val. Loss: 0.4826
+[226/1000] | Epoch Time: 0m 3s - Train Loss: 0.4658 - Val. Loss: 0.4833
+[228/1000] | Epoch Time: 0m 3s - Train Loss: 0.4355 - Val. Loss: 0.4828
+[227/1000] | Epoch Time: 0m 3s - Train Loss: 0.4692 - Val. Loss: 0.4832
+[229/1000] | Epoch Time: 0m 3s - Train Loss: 0.4447 - Val. Loss: 0.4827
+[228/1000] | Epoch Time: 0m 3s - Train Loss: 0.4492 - Val. Loss: 0.4832
+[230/1000] | Epoch Time: 0m 3s - Train Loss: 0.4480 - Val. Loss: 0.4826
+[229/1000] | Epoch Time: 0m 3s - Train Loss: 0.4609 - Val. Loss: 0.4831
+[231/1000] | Epoch Time: 0m 3s - Train Loss: 0.4388 - Val. Loss: 0.4827
+[230/1000] | Epoch Time: 0m 3s - Train Loss: 0.4646 - Val. Loss: 0.4833
+[232/1000] | Epoch Time: 0m 3s - Train Loss: 0.4579 - Val. Loss: 0.4826
+[231/1000] | Epoch Time: 0m 3s - Train Loss: 0.4518 - Val. Loss: 0.4833
+[233/1000] | Epoch Time: 0m 3s - Train Loss: 0.4418 - Val. Loss: 0.4826
+[232/1000] | Epoch Time: 0m 3s - Train Loss: 0.4708 - Val. Loss: 0.4833
+[234/1000] | Epoch Time: 0m 3s - Train Loss: 0.4400 - Val. Loss: 0.4825
+[233/1000] | Epoch Time: 0m 3s - Train Loss: 0.4623 - Val. Loss: 0.4834
+[235/1000] | Epoch Time: 0m 3s - Train Loss: 0.4408 - Val. Loss: 0.4827
+[234/1000] | Epoch Time: 0m 3s - Train Loss: 0.4587 - Val. Loss: 0.4835
+[236/1000] | Epoch Time: 0m 3s - Train Loss: 0.4409 - Val. Loss: 0.4827
+[235/1000] | Epoch Time: 0m 3s - Train Loss: 0.4586 - Val. Loss: 0.4836
+[237/1000] | Epoch Time: 0m 3s - Train Loss: 0.4639 - Val. Loss: 0.4828
+[236/1000] | Epoch Time: 0m 3s - Train Loss: 0.4593 - Val. Loss: 0.4837
+[238/1000] | Epoch Time: 0m 3s - Train Loss: 0.4518 - Val. Loss: 0.4829
+[237/1000] | Epoch Time: 0m 3s - Train Loss: 0.4771 - Val. Loss: 0.4839
+[239/1000] | Epoch Time: 0m 3s - Train Loss: 0.4486 - Val. Loss: 0.4830
+Early stopping triggered
+Early stopping triggered. Training will stop.
+rpgpu019:3210108:3271882 [0] NCCL INFO misc/socket.cc:64 -> 3
+rpgpu019:3210108:3271882 [0] NCCL INFO misc/socket.cc:81 -> 3
+rpgpu019:3210108:3271882 [0] NCCL INFO misc/socket.cc:863 -> 3
+rpgpu019:3210108:3210171 [0] NCCL INFO misc/socket.cc:915 -> 3
+rpgpu019:3210108:3271882 [0] NCCL INFO comm 0xbf3ee00 rank 0 nranks 2 cudaDev 0 busId 3b000 - Abort COMPLETE
+[238/1000] | Epoch Time: 0m 3s - Train Loss: 0.4619 - Val. Loss: 0.4840
+[239/1000] | Epoch Time: 0m 3s - Train Loss: 0.4721 - Val. Loss: 0.4841
+[240/1000] | Epoch Time: 0m 3s - Train Loss: 0.4651 - Val. Loss: 0.4843
+[241/1000] | Epoch Time: 0m 3s - Train Loss: 0.4544 - Val. Loss: 0.4844
+[242/1000] | Epoch Time: 0m 3s - Train Loss: 0.4606 - Val. Loss: 0.4846
+[243/1000] | Epoch Time: 0m 3s - Train Loss: 0.4770 - Val. Loss: 0.4846
+[244/1000] | Epoch Time: 0m 3s - Train Loss: 0.4507 - Val. Loss: 0.4848
+[245/1000] | Epoch Time: 0m 3s - Train Loss: 0.4550 - Val. Loss: 0.4849
+[246/1000] | Epoch Time: 0m 3s - Train Loss: 0.4563 - Val. Loss: 0.4848
+[247/1000] | Epoch Time: 0m 3s - Train Loss: 0.4577 - Val. Loss: 0.4846
+[248/1000] | Epoch Time: 0m 3s - Train Loss: 0.4691 - Val. Loss: 0.4847
+[249/1000] | Epoch Time: 0m 3s - Train Loss: 0.4675 - Val. Loss: 0.4846
+[250/1000] | Epoch Time: 0m 3s - Train Loss: 0.4483 - Val. Loss: 0.4843
+[251/1000] | Epoch Time: 0m 3s - Train Loss: 0.4682 - Val. Loss: 0.4839
+[252/1000] | Epoch Time: 0m 3s - Train Loss: 0.4576 - Val. Loss: 0.4839
+[253/1000] | Epoch Time: 0m 3s - Train Loss: 0.4640 - Val. Loss: 0.4839
+[254/1000] | Epoch Time: 0m 3s - Train Loss: 0.4619 - Val. Loss: 0.4839
+[255/1000] | Epoch Time: 0m 3s - Train Loss: 0.4605 - Val. Loss: 0.4839
+[256/1000] | Epoch Time: 0m 3s - Train Loss: 0.4625 - Val. Loss: 0.4840
+Early stopping triggered
+Early stopping triggered. Training will stop.
+rpgpu020:1611701:1677383 [0] NCCL INFO misc/socket.cc:64 -> 3
+rpgpu020:1611701:1677383 [0] NCCL INFO misc/socket.cc:81 -> 3
+rpgpu020:1611701:1677383 [0] NCCL INFO misc/socket.cc:863 -> 3
+rpgpu020:1611701:1611765 [0] NCCL INFO misc/socket.cc:915 -> 3
+rpgpu020:1611701:1677383 [0] NCCL INFO comm 0xc369940 rank 0 nranks 2 cudaDev 0 busId 3b000 - Abort COMPLETE
+rpgpu019:3210109:3210148 [1] NCCL INFO misc/socket.cc:64 -> 3
+rpgpu019:3210109:3210148 [1] NCCL INFO misc/socket.cc:81 -> 3
+rpgpu019:3210109:3210148 [1] NCCL INFO misc/socket.cc:863 -> 3
+rpgpu019:3210109:3210172 [1] NCCL INFO misc/socket.cc:915 -> 3
+rpgpu019:3210109:3210148 [1] NCCL INFO comm 0xbdbf890 rank 1 nranks 2 cudaDev 1 busId 5e000 - Abort COMPLETE
+rpgpu020:1611702:1611741 [1] NCCL INFO misc/socket.cc:64 -> 3
+rpgpu020:1611702:1611741 [1] NCCL INFO misc/socket.cc:81 -> 3
+rpgpu020:1611702:1611741 [1] NCCL INFO misc/socket.cc:863 -> 3
+rpgpu020:1611702:1611764 [1] NCCL INFO misc/socket.cc:915 -> 3
+rpgpu020:1611702:1611741 [1] NCCL INFO comm 0xc23bc40 rank 1 nranks 2 cudaDev 1 busId 5e000 - Abort COMPLETE
+====================================
+Training Completed
+====================================

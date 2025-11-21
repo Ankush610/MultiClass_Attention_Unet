@@ -1,0 +1,42 @@
+==========================================
+SLURM_CLUSTER_NAME = paramprabha
+SLURM_JOB_ACCOUNT = cdac
+SLURM_JOB_ID = 318796
+SLURM_JOB_NAME = mnist_code
+SLURM_JOB_NODELIST = rpgpu[013-014]
+SLURM_JOB_USER = omjadhav
+SLURM_JOB_UID = 52009
+SLURM_JOB_PARTITION = gpu
+SLURM_TASK_PID = 1524959
+SLURM_SUBMIT_DIR = /home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/main
+SLURM_CPUS_ON_NODE = 10
+SLURM_NTASKS = 2
+SLURM_TASK_PID = 1524959
+==========================================
+====================================
+SLURM Job Information
+====================================
+Job Name: mnist_code
+Number of Nodes: 2
+Number of GPUs per Node: 2
+Nodes Array: rpgpu013 rpgpu014
+Head Node: rpgpu013
+Head Node IP: 172.5.3.13
+====================================
+====================================
+Distributed Setup
+====================================
+MASTER_ADDR: 172.5.3.13
+MASTER_PORT: 29900
+WORLD_SIZE: 4
+RANK: 0
+NCCL_IB_DISABLE: 0
+NCCL_DEBUG: INFO
+Connectio MODE : Using InfiniBand (NCCL_IB_ENABLE)
+====================================
+====================================
+Launching Accelerate Training
+====================================
+====================================
+Training Completed
+====================================

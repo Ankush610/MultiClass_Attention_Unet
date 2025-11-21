@@ -2,7 +2,7 @@
 dataset
 files
 results
-main/logs/
+./main/logs/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

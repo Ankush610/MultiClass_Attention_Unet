@@ -1,0 +1,224 @@
+The following values were not passed to `accelerate launch` and had defaults used instead:
+	`--num_processes` was set to a value of `2`
+		More than one GPU was found, enabling multi-GPU training.
+		If this was unintended please pass in `--num_processes=1`.
+	`--num_machines` was set to a value of `1`
+	`--mixed_precision` was set to a value of `'no'`
+	`--dynamo_backend` was set to a value of `'no'`
+To avoid this warning pass in values for each of the problematic parameters or run `accelerate config`.
+The following values were not passed to `accelerate launch` and had defaults used instead:
+	`--num_processes` was set to a value of `2`
+		More than one GPU was found, enabling multi-GPU training.
+		If this was unintended please pass in `--num_processes=1`.
+	`--num_machines` was set to a value of `1`
+	`--mixed_precision` was set to a value of `'no'`
+	`--dynamo_backend` was set to a value of `'no'`
+To avoid this warning pass in values for each of the problematic parameters or run `accelerate config`.
+I1120 17:01:39.453000 3210084 torch/distributed/run.py:657] Using nproc_per_node=2.
+I1120 17:01:39.454000 3210084 torch/distributed/launcher/api.py:199] Starting elastic_operator with launch configs:
+I1120 17:01:39.454000 3210084 torch/distributed/launcher/api.py:199]   entrypoint         : train_ddp.py
+I1120 17:01:39.454000 3210084 torch/distributed/launcher/api.py:199]   min_nodes          : 1
+I1120 17:01:39.454000 3210084 torch/distributed/launcher/api.py:199]   max_nodes          : 1
+I1120 17:01:39.454000 3210084 torch/distributed/launcher/api.py:199]   nproc_per_node     : 2
+I1120 17:01:39.454000 3210084 torch/distributed/launcher/api.py:199]   run_id             : none
+I1120 17:01:39.454000 3210084 torch/distributed/launcher/api.py:199]   rdzv_backend       : static
+I1120 17:01:39.454000 3210084 torch/distributed/launcher/api.py:199]   rdzv_endpoint      : 127.0.0.1:29500
+I1120 17:01:39.454000 3210084 torch/distributed/launcher/api.py:199]   rdzv_configs       : {'rank': 0, 'timeout': 900}
+I1120 17:01:39.454000 3210084 torch/distributed/launcher/api.py:199]   max_restarts       : 0
+I1120 17:01:39.454000 3210084 torch/distributed/launcher/api.py:199]   monitor_interval   : 0.1
+I1120 17:01:39.454000 3210084 torch/distributed/launcher/api.py:199]   log_dir            : /tmp/torchelastic_u6bc8wbe
+I1120 17:01:39.454000 3210084 torch/distributed/launcher/api.py:199]   metrics_cfg        : {}
+I1120 17:01:39.454000 3210084 torch/distributed/launcher/api.py:199]   event_log_handler  : null
+I1120 17:01:39.454000 3210084 torch/distributed/launcher/api.py:199] 
+I1120 17:01:39.458000 3210084 torch/distributed/elastic/agent/server/api.py:869] [default] starting workers for entrypoint: python3
+I1120 17:01:39.458000 3210084 torch/distributed/elastic/agent/server/api.py:677] [default] Rendezvous'ing worker group
+I1120 17:01:39.468000 1611677 torch/distributed/run.py:657] Using nproc_per_node=2.
+I1120 17:01:39.469000 1611677 torch/distributed/launcher/api.py:199] Starting elastic_operator with launch configs:
+I1120 17:01:39.469000 1611677 torch/distributed/launcher/api.py:199]   entrypoint         : train_ddp.py
+I1120 17:01:39.469000 1611677 torch/distributed/launcher/api.py:199]   min_nodes          : 1
+I1120 17:01:39.469000 1611677 torch/distributed/launcher/api.py:199]   max_nodes          : 1
+I1120 17:01:39.469000 1611677 torch/distributed/launcher/api.py:199]   nproc_per_node     : 2
+I1120 17:01:39.469000 1611677 torch/distributed/launcher/api.py:199]   run_id             : none
+I1120 17:01:39.469000 1611677 torch/distributed/launcher/api.py:199]   rdzv_backend       : static
+I1120 17:01:39.469000 1611677 torch/distributed/launcher/api.py:199]   rdzv_endpoint      : 127.0.0.1:29500
+I1120 17:01:39.469000 1611677 torch/distributed/launcher/api.py:199]   rdzv_configs       : {'rank': 0, 'timeout': 900}
+I1120 17:01:39.469000 1611677 torch/distributed/launcher/api.py:199]   max_restarts       : 0
+I1120 17:01:39.469000 1611677 torch/distributed/launcher/api.py:199]   monitor_interval   : 0.1
+I1120 17:01:39.469000 1611677 torch/distributed/launcher/api.py:199]   log_dir            : /tmp/torchelastic_2broks8x
+I1120 17:01:39.469000 1611677 torch/distributed/launcher/api.py:199]   metrics_cfg        : {}
+I1120 17:01:39.469000 1611677 torch/distributed/launcher/api.py:199]   event_log_handler  : null
+I1120 17:01:39.469000 1611677 torch/distributed/launcher/api.py:199] 
+I1120 17:01:39.471000 1611677 torch/distributed/elastic/agent/server/api.py:869] [default] starting workers for entrypoint: python3
+I1120 17:01:39.471000 1611677 torch/distributed/elastic/agent/server/api.py:677] [default] Rendezvous'ing worker group
+I1120 17:01:39.764000 3210084 torch/distributed/elastic/agent/server/api.py:523] [default] Rendezvous complete for workers. Result:
+I1120 17:01:39.764000 3210084 torch/distributed/elastic/agent/server/api.py:523]   restart_count=0
+I1120 17:01:39.764000 3210084 torch/distributed/elastic/agent/server/api.py:523]   master_addr=127.0.0.1
+I1120 17:01:39.764000 3210084 torch/distributed/elastic/agent/server/api.py:523]   master_port=29500
+I1120 17:01:39.764000 3210084 torch/distributed/elastic/agent/server/api.py:523]   group_rank=0
+I1120 17:01:39.764000 3210084 torch/distributed/elastic/agent/server/api.py:523]   group_world_size=1
+I1120 17:01:39.764000 3210084 torch/distributed/elastic/agent/server/api.py:523]   local_ranks=[0, 1]
+I1120 17:01:39.764000 3210084 torch/distributed/elastic/agent/server/api.py:523]   role_ranks=[0, 1]
+I1120 17:01:39.764000 3210084 torch/distributed/elastic/agent/server/api.py:523]   global_ranks=[0, 1]
+I1120 17:01:39.764000 1611677 torch/distributed/elastic/agent/server/api.py:523] [default] Rendezvous complete for workers. Result:
+I1120 17:01:39.764000 1611677 torch/distributed/elastic/agent/server/api.py:523]   restart_count=0
+I1120 17:01:39.764000 1611677 torch/distributed/elastic/agent/server/api.py:523]   master_addr=127.0.0.1
+I1120 17:01:39.764000 1611677 torch/distributed/elastic/agent/server/api.py:523]   master_port=29500
+I1120 17:01:39.764000 1611677 torch/distributed/elastic/agent/server/api.py:523]   group_rank=0
+I1120 17:01:39.764000 1611677 torch/distributed/elastic/agent/server/api.py:523]   group_world_size=1
+I1120 17:01:39.764000 1611677 torch/distributed/elastic/agent/server/api.py:523]   local_ranks=[0, 1]
+I1120 17:01:39.764000 1611677 torch/distributed/elastic/agent/server/api.py:523]   role_ranks=[0, 1]
+I1120 17:01:39.764000 1611677 torch/distributed/elastic/agent/server/api.py:523]   global_ranks=[0, 1]
+I1120 17:01:39.764000 3210084 torch/distributed/elastic/agent/server/api.py:523]   role_world_sizes=[2, 2]
+I1120 17:01:39.764000 3210084 torch/distributed/elastic/agent/server/api.py:523]   global_world_sizes=[2, 2]
+I1120 17:01:39.764000 3210084 torch/distributed/elastic/agent/server/api.py:523]   event_log_handler=null
+I1120 17:01:39.764000 3210084 torch/distributed/elastic/agent/server/api.py:523] 
+I1120 17:01:39.764000 1611677 torch/distributed/elastic/agent/server/api.py:523]   role_world_sizes=[2, 2]
+I1120 17:01:39.764000 1611677 torch/distributed/elastic/agent/server/api.py:523]   global_world_sizes=[2, 2]
+I1120 17:01:39.764000 1611677 torch/distributed/elastic/agent/server/api.py:523]   event_log_handler=null
+I1120 17:01:39.764000 1611677 torch/distributed/elastic/agent/server/api.py:523] 
+I1120 17:01:39.764000 3210084 torch/distributed/elastic/agent/server/api.py:685] [default] Starting worker group
+I1120 17:01:39.764000 1611677 torch/distributed/elastic/agent/server/api.py:685] [default] Starting worker group
+I1120 17:01:39.764000 1611677 torch/distributed/elastic/agent/server/local_elastic_agent.py:296] use_agent_store: True
+I1120 17:01:39.764000 3210084 torch/distributed/elastic/agent/server/local_elastic_agent.py:296] use_agent_store: True
+I1120 17:01:39.764000 1611677 torch/distributed/elastic/agent/server/local_elastic_agent.py:192] Environment variable 'TORCHELASTIC_ENABLE_FILE_TIMER' not found. Do not start FileTimerServer.
+I1120 17:01:39.765000 3210084 torch/distributed/elastic/agent/server/local_elastic_agent.py:192] Environment variable 'TORCHELASTIC_ENABLE_FILE_TIMER' not found. Do not start FileTimerServer.
+I1120 17:01:39.765000 1611677 torch/distributed/elastic/agent/server/local_elastic_agent.py:236] Environment variable 'TORCHELASTIC_HEALTH_CHECK_PORT' not found. Do not start health check.
+I1120 17:01:39.765000 3210084 torch/distributed/elastic/agent/server/local_elastic_agent.py:236] Environment variable 'TORCHELASTIC_HEALTH_CHECK_PORT' not found. Do not start health check.
+Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/albumentations/core/validation.py:114: UserWarning: ShiftScaleRotate is a special case of Affine transform. Please use Affine transform instead.
+  original_init(self, **validated_kwargs)
+/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/albumentations/core/validation.py:114: UserWarning: ShiftScaleRotate is a special case of Affine transform. Please use Affine transform instead.
+  original_init(self, **validated_kwargs)
+/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/albumentations/core/validation.py:114: UserWarning: ShiftScaleRotate is a special case of Affine transform. Please use Affine transform instead.
+  original_init(self, **validated_kwargs)
+/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/albumentations/core/validation.py:114: UserWarning: ShiftScaleRotate is a special case of Affine transform. Please use Affine transform instead.
+  original_init(self, **validated_kwargs)
+/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/main/train_ddp.py:175: UserWarning: Argument(s) 'max_holes, max_height, max_width' are not valid for transform CoarseDropout
+  A.CoarseDropout(p=0.1, max_holes=3, max_height=32, max_width=32),
+/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/main/train_ddp.py:175: UserWarning: Argument(s) 'max_holes, max_height, max_width' are not valid for transform CoarseDropout
+  A.CoarseDropout(p=0.1, max_holes=3, max_height=32, max_width=32),
+/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/main/train_ddp.py:175: UserWarning: Argument(s) 'max_holes, max_height, max_width' are not valid for transform CoarseDropout
+  A.CoarseDropout(p=0.1, max_holes=3, max_height=32, max_width=32),
+/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/main/train_ddp.py:175: UserWarning: Argument(s) 'max_holes, max_height, max_width' are not valid for transform CoarseDropout
+  A.CoarseDropout(p=0.1, max_holes=3, max_height=32, max_width=32),
+/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/main/train_ddp.py:83: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler()
+/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/main/train_ddp.py:83: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler()
+/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/main/train_ddp.py:83: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler()
+/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/main/train_ddp.py:83: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler()
+/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/main/train_ddp.py:89: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/main/train_ddp.py:89: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/main/train_ddp.py:89: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/main/train_ddp.py:89: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+[rank0]:[W1120 17:16:19.222488413 ProcessGroupNCCL.cpp:1538] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+[rank0]:[W1120 17:17:18.537826347 ProcessGroupNCCL.cpp:1538] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+[rank1]:[E1120 17:26:19.880023252 ProcessGroupNCCL.cpp:685] [Rank 1] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=25336, OpType=BROADCAST, NumelIn=5056, NumelOut=5056, Timeout(ms)=600000) ran for 600056 milliseconds before timing out.
+[rank1]:[E1120 17:26:19.965313469 ProcessGroupNCCL.cpp:2252] [PG ID 0 PG GUID 0(default_pg) Rank 1]  failure detected by watchdog at work sequence id: 25336 PG status: last enqueued work: 25336, last completed work: 25335
+[rank1]:[E1120 17:26:19.965331771 ProcessGroupNCCL.cpp:732] Stack trace of the failed collective not found, potentially because FlightRecorder is disabled. You can enable it by setting TORCH_NCCL_TRACE_BUFFER_SIZE to a non-zero value.
+[rank1]:[E1120 17:26:19.965361277 ProcessGroupNCCL.cpp:2584] [PG ID 0 PG GUID 0(default_pg) Rank 1] First PG on this rank to signal dumping.
+[rank1]:[E1120 17:26:19.047202915 ProcessGroupNCCL.cpp:1870] [PG ID 0 PG GUID 0(default_pg) Rank 1] Received a dump signal due to a collective timeout from this local rank and we will try our best to dump the debug info. Last enqueued NCCL work: 25336, last completed NCCL work: 25335.This is most likely caused by incorrect usages of collectives, e.g., wrong sizes used across ranks, the order of collectives is not same for all ranks or the scheduled collective, for some reason, didn't run. Additionally, this can be caused by GIL deadlock or other reasons such as network errors or bugs in the communications library (e.g. NCCL), etc. 
+[rank1]:[E1120 17:26:19.047375328 ProcessGroupNCCL.cpp:1589] [PG ID 0 PG GUID 0(default_pg) Rank 1] ProcessGroupNCCL preparing to dump debug info. Include stack trace: 1
+[rank1]:[E1120 17:27:17.142132328 ProcessGroupNCCL.cpp:685] [Rank 1] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=27138, OpType=BROADCAST, NumelIn=5056, NumelOut=5056, Timeout(ms)=600000) ran for 600037 milliseconds before timing out.
+[rank1]:[E1120 17:27:17.230687071 ProcessGroupNCCL.cpp:2252] [PG ID 0 PG GUID 0(default_pg) Rank 1]  failure detected by watchdog at work sequence id: 27138 PG status: last enqueued work: 27138, last completed work: 27137
+[rank1]:[E1120 17:27:17.230704248 ProcessGroupNCCL.cpp:732] Stack trace of the failed collective not found, potentially because FlightRecorder is disabled. You can enable it by setting TORCH_NCCL_TRACE_BUFFER_SIZE to a non-zero value.
+[rank1]:[E1120 17:27:17.230742558 ProcessGroupNCCL.cpp:2584] [PG ID 0 PG GUID 0(default_pg) Rank 1] First PG on this rank to signal dumping.
+[rank1]:[E1120 17:27:18.220183572 ProcessGroupNCCL.cpp:1870] [PG ID 0 PG GUID 0(default_pg) Rank 1] Received a dump signal due to a collective timeout from this local rank and we will try our best to dump the debug info. Last enqueued NCCL work: 27138, last completed NCCL work: 27137.This is most likely caused by incorrect usages of collectives, e.g., wrong sizes used across ranks, the order of collectives is not same for all ranks or the scheduled collective, for some reason, didn't run. Additionally, this can be caused by GIL deadlock or other reasons such as network errors or bugs in the communications library (e.g. NCCL), etc. 
+[rank1]:[E1120 17:27:18.220953265 ProcessGroupNCCL.cpp:1589] [PG ID 0 PG GUID 0(default_pg) Rank 1] ProcessGroupNCCL preparing to dump debug info. Include stack trace: 1
+[rank1]:[E1120 17:27:20.757971679 ProcessGroupNCCL.cpp:746] [Rank 1] Some NCCL operations have failed or timed out. Due to the asynchronous nature of CUDA kernels, subsequent GPU operations might run on corrupted/incomplete data.
+[rank1]:[E1120 17:27:20.758036529 ProcessGroupNCCL.cpp:760] [Rank 1] To avoid data inconsistency, we are taking the entire process down.
+[rank1]:[E1120 17:27:20.797048750 ProcessGroupNCCL.cpp:2068] [PG ID 0 PG GUID 0(default_pg) Rank 1] Process group watchdog thread terminated with exception: [Rank 1] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=25336, OpType=BROADCAST, NumelIn=5056, NumelOut=5056, Timeout(ms)=600000) ran for 600056 milliseconds before timing out.
+Exception raised from checkTimeout at /pytorch/torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:688 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x80 (0x7f6bfbab3eb0 in /home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #1: c10d::ProcessGroupNCCL::WorkNCCL::checkTimeout(std::optional<std::chrono::duration<long, std::ratio<1l, 1000l> > >) + 0x247 (0x7f6bfca1a147 in /home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #2: c10d::ProcessGroupNCCL::Watchdog::runLoop() + 0x1591 (0x7f6bfca1db61 in /home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #3: c10d::ProcessGroupNCCL::Watchdog::run() + 0xd2 (0x7f6bfca1eec2 in /home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #4: <unknown function> + 0xdbbf4 (0x7f6cdf515bf4 in /home/omjadhav/miniconda3/envs/img2img-turbo/bin/../lib/libstdc++.so.6)
+frame #5: <unknown function> + 0x81ca (0x7f6ce244f1ca in /lib64/libpthread.so.0)
+frame #6: clone + 0x43 (0x7f6ce1931e73 in /lib64/libc.so.6)
+
+E1120 17:27:20.712000 3210084 torch/distributed/elastic/multiprocessing/api.py:874] failed (exitcode: -6) local_rank: 1 (pid: 3210109) of binary: /home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/bin/python3
+Traceback (most recent call last):
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/bin/accelerate", line 10, in <module>
+    sys.exit(main())
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/accelerate/commands/accelerate_cli.py", line 50, in main
+    args.func(args)
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/accelerate/commands/launch.py", line 1226, in launch_command
+    multi_gpu_launcher(args)
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/accelerate/commands/launch.py", line 853, in multi_gpu_launcher
+    distrib_run.run(args)
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/torch/distributed/run.py", line 892, in run
+    elastic_launch(
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 143, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 277, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+========================================================
+train_ddp.py FAILED
+--------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+--------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-11-20_17:27:20
+  host      : rpgpu019.iuac.res.in
+  rank      : 1 (local_rank: 1)
+  exitcode  : -6 (pid: 3210109)
+  error_file: <N/A>
+  traceback : Signal 6 (SIGABRT) received by PID 3210109
+========================================================
+srun: error: rpgpu019: task 0: Exited with exit code 1
+[rank1]:[E1120 17:28:18.745983223 ProcessGroupNCCL.cpp:746] [Rank 1] Some NCCL operations have failed or timed out. Due to the asynchronous nature of CUDA kernels, subsequent GPU operations might run on corrupted/incomplete data.
+[rank1]:[E1120 17:28:18.746004824 ProcessGroupNCCL.cpp:760] [Rank 1] To avoid data inconsistency, we are taking the entire process down.
+[rank1]:[E1120 17:28:18.908634679 ProcessGroupNCCL.cpp:2068] [PG ID 0 PG GUID 0(default_pg) Rank 1] Process group watchdog thread terminated with exception: [Rank 1] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=27138, OpType=BROADCAST, NumelIn=5056, NumelOut=5056, Timeout(ms)=600000) ran for 600037 milliseconds before timing out.
+Exception raised from checkTimeout at /pytorch/torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:688 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x80 (0x7fd320479eb0 in /home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #1: c10d::ProcessGroupNCCL::WorkNCCL::checkTimeout(std::optional<std::chrono::duration<long, std::ratio<1l, 1000l> > >) + 0x247 (0x7fd3213e0147 in /home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #2: c10d::ProcessGroupNCCL::Watchdog::runLoop() + 0x1591 (0x7fd3213e3b61 in /home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #3: c10d::ProcessGroupNCCL::Watchdog::run() + 0xd2 (0x7fd3213e4ec2 in /home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #4: <unknown function> + 0xdbbf4 (0x7fd403edbbf4 in /home/omjadhav/miniconda3/envs/img2img-turbo/bin/../lib/libstdc++.so.6)
+frame #5: <unknown function> + 0x81ca (0x7fd406e151ca in /lib64/libpthread.so.0)
+frame #6: clone + 0x43 (0x7fd4062f7e73 in /lib64/libc.so.6)
+
+E1120 17:28:18.702000 1611677 torch/distributed/elastic/multiprocessing/api.py:874] failed (exitcode: -6) local_rank: 1 (pid: 1611702) of binary: /home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/bin/python3
+Traceback (most recent call last):
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/bin/accelerate", line 10, in <module>
+    sys.exit(main())
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/accelerate/commands/accelerate_cli.py", line 50, in main
+    args.func(args)
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/accelerate/commands/launch.py", line 1226, in launch_command
+    multi_gpu_launcher(args)
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/accelerate/commands/launch.py", line 853, in multi_gpu_launcher
+    distrib_run.run(args)
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/torch/distributed/run.py", line 892, in run
+    elastic_launch(
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 143, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 277, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+========================================================
+train_ddp.py FAILED
+--------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+--------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-11-20_17:28:18
+  host      : rpgpu020.iuac.res.in
+  rank      : 1 (local_rank: 1)
+  exitcode  : -6 (pid: 1611702)
+  error_file: <N/A>
+  traceback : Signal 6 (SIGABRT) received by PID 1611702
+========================================================
+srun: error: rpgpu020: task 1: Exited with exit code 1

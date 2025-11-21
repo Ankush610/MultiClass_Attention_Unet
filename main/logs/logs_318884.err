@@ -1,0 +1,194 @@
+The following values were not passed to `accelerate launch` and had defaults used instead:
+	`--num_processes` was set to a value of `2`
+		More than one GPU was found, enabling multi-GPU training.
+		If this was unintended please pass in `--num_processes=1`.
+	`--num_machines` was set to a value of `1`
+	`--mixed_precision` was set to a value of `'no'`
+	`--dynamo_backend` was set to a value of `'no'`
+To avoid this warning pass in values for each of the problematic parameters or run `accelerate config`.
+The following values were not passed to `accelerate launch` and had defaults used instead:
+	`--num_processes` was set to a value of `2`
+		More than one GPU was found, enabling multi-GPU training.
+		If this was unintended please pass in `--num_processes=1`.
+	`--num_machines` was set to a value of `1`
+	`--mixed_precision` was set to a value of `'no'`
+	`--dynamo_backend` was set to a value of `'no'`
+To avoid this warning pass in values for each of the problematic parameters or run `accelerate config`.
+I1120 16:56:47.164000 3209910 torch/distributed/run.py:657] Using nproc_per_node=2.
+I1120 16:56:47.165000 3209910 torch/distributed/launcher/api.py:199] Starting elastic_operator with launch configs:
+I1120 16:56:47.165000 3209910 torch/distributed/launcher/api.py:199]   entrypoint         : train_ddp.py
+I1120 16:56:47.165000 3209910 torch/distributed/launcher/api.py:199]   min_nodes          : 1
+I1120 16:56:47.165000 3209910 torch/distributed/launcher/api.py:199]   max_nodes          : 1
+I1120 16:56:47.165000 3209910 torch/distributed/launcher/api.py:199]   nproc_per_node     : 2
+I1120 16:56:47.165000 3209910 torch/distributed/launcher/api.py:199]   run_id             : none
+I1120 16:56:47.165000 3209910 torch/distributed/launcher/api.py:199]   rdzv_backend       : static
+I1120 16:56:47.165000 3209910 torch/distributed/launcher/api.py:199]   rdzv_endpoint      : 127.0.0.1:29500
+I1120 16:56:47.165000 3209910 torch/distributed/launcher/api.py:199]   rdzv_configs       : {'rank': 0, 'timeout': 900}
+I1120 16:56:47.165000 3209910 torch/distributed/launcher/api.py:199]   max_restarts       : 0
+I1120 16:56:47.165000 3209910 torch/distributed/launcher/api.py:199]   monitor_interval   : 0.1
+I1120 16:56:47.165000 3209910 torch/distributed/launcher/api.py:199]   log_dir            : /tmp/torchelastic_m06kv8o8
+I1120 16:56:47.165000 3209910 torch/distributed/launcher/api.py:199]   metrics_cfg        : {}
+I1120 16:56:47.165000 3209910 torch/distributed/launcher/api.py:199]   event_log_handler  : null
+I1120 16:56:47.165000 3209910 torch/distributed/launcher/api.py:199] 
+I1120 16:56:47.167000 3209910 torch/distributed/elastic/agent/server/api.py:869] [default] starting workers for entrypoint: python3
+I1120 16:56:47.168000 3209910 torch/distributed/elastic/agent/server/api.py:677] [default] Rendezvous'ing worker group
+I1120 16:56:47.168000 1611534 torch/distributed/run.py:657] Using nproc_per_node=2.
+I1120 16:56:47.169000 1611534 torch/distributed/launcher/api.py:199] Starting elastic_operator with launch configs:
+I1120 16:56:47.169000 1611534 torch/distributed/launcher/api.py:199]   entrypoint         : train_ddp.py
+I1120 16:56:47.169000 1611534 torch/distributed/launcher/api.py:199]   min_nodes          : 1
+I1120 16:56:47.169000 1611534 torch/distributed/launcher/api.py:199]   max_nodes          : 1
+I1120 16:56:47.169000 1611534 torch/distributed/launcher/api.py:199]   nproc_per_node     : 2
+I1120 16:56:47.169000 1611534 torch/distributed/launcher/api.py:199]   run_id             : none
+I1120 16:56:47.169000 1611534 torch/distributed/launcher/api.py:199]   rdzv_backend       : static
+I1120 16:56:47.169000 1611534 torch/distributed/launcher/api.py:199]   rdzv_endpoint      : 127.0.0.1:29500
+I1120 16:56:47.169000 1611534 torch/distributed/launcher/api.py:199]   rdzv_configs       : {'rank': 0, 'timeout': 900}
+I1120 16:56:47.169000 1611534 torch/distributed/launcher/api.py:199]   max_restarts       : 0
+I1120 16:56:47.169000 1611534 torch/distributed/launcher/api.py:199]   monitor_interval   : 0.1
+I1120 16:56:47.169000 1611534 torch/distributed/launcher/api.py:199]   log_dir            : /tmp/torchelastic_sv0ie9o1
+I1120 16:56:47.169000 1611534 torch/distributed/launcher/api.py:199]   metrics_cfg        : {}
+I1120 16:56:47.169000 1611534 torch/distributed/launcher/api.py:199]   event_log_handler  : null
+I1120 16:56:47.169000 1611534 torch/distributed/launcher/api.py:199] 
+I1120 16:56:47.171000 1611534 torch/distributed/elastic/agent/server/api.py:869] [default] starting workers for entrypoint: python3
+I1120 16:56:47.172000 1611534 torch/distributed/elastic/agent/server/api.py:677] [default] Rendezvous'ing worker group
+I1120 16:56:47.306000 1611534 torch/distributed/elastic/agent/server/api.py:523] [default] Rendezvous complete for workers. Result:
+I1120 16:56:47.306000 1611534 torch/distributed/elastic/agent/server/api.py:523]   restart_count=0
+I1120 16:56:47.306000 1611534 torch/distributed/elastic/agent/server/api.py:523]   master_addr=127.0.0.1
+I1120 16:56:47.306000 1611534 torch/distributed/elastic/agent/server/api.py:523]   master_port=29500
+I1120 16:56:47.306000 1611534 torch/distributed/elastic/agent/server/api.py:523]   group_rank=0
+I1120 16:56:47.306000 1611534 torch/distributed/elastic/agent/server/api.py:523]   group_world_size=1
+I1120 16:56:47.306000 1611534 torch/distributed/elastic/agent/server/api.py:523]   local_ranks=[0, 1]
+I1120 16:56:47.306000 1611534 torch/distributed/elastic/agent/server/api.py:523]   role_ranks=[0, 1]
+I1120 16:56:47.306000 1611534 torch/distributed/elastic/agent/server/api.py:523]   global_ranks=[0, 1]
+I1120 16:56:47.306000 1611534 torch/distributed/elastic/agent/server/api.py:523]   role_world_sizes=[2, 2]
+I1120 16:56:47.306000 1611534 torch/distributed/elastic/agent/server/api.py:523]   global_world_sizes=[2, 2]
+I1120 16:56:47.306000 1611534 torch/distributed/elastic/agent/server/api.py:523]   event_log_handler=null
+I1120 16:56:47.306000 1611534 torch/distributed/elastic/agent/server/api.py:523] 
+I1120 16:56:47.306000 1611534 torch/distributed/elastic/agent/server/api.py:685] [default] Starting worker group
+I1120 16:56:47.307000 1611534 torch/distributed/elastic/agent/server/local_elastic_agent.py:296] use_agent_store: True
+I1120 16:56:47.307000 3209910 torch/distributed/elastic/agent/server/api.py:523] [default] Rendezvous complete for workers. Result:
+I1120 16:56:47.307000 3209910 torch/distributed/elastic/agent/server/api.py:523]   restart_count=0
+I1120 16:56:47.307000 3209910 torch/distributed/elastic/agent/server/api.py:523]   master_addr=127.0.0.1
+I1120 16:56:47.307000 3209910 torch/distributed/elastic/agent/server/api.py:523]   master_port=29500
+I1120 16:56:47.307000 3209910 torch/distributed/elastic/agent/server/api.py:523]   group_rank=0
+I1120 16:56:47.307000 3209910 torch/distributed/elastic/agent/server/api.py:523]   group_world_size=1
+I1120 16:56:47.307000 3209910 torch/distributed/elastic/agent/server/api.py:523]   local_ranks=[0, 1]
+I1120 16:56:47.307000 3209910 torch/distributed/elastic/agent/server/api.py:523]   role_ranks=[0, 1]
+I1120 16:56:47.307000 3209910 torch/distributed/elastic/agent/server/api.py:523]   global_ranks=[0, 1]
+I1120 16:56:47.307000 3209910 torch/distributed/elastic/agent/server/api.py:523]   role_world_sizes=[2, 2]
+I1120 16:56:47.307000 3209910 torch/distributed/elastic/agent/server/api.py:523]   global_world_sizes=[2, 2]
+I1120 16:56:47.307000 3209910 torch/distributed/elastic/agent/server/api.py:523]   event_log_handler=null
+I1120 16:56:47.307000 3209910 torch/distributed/elastic/agent/server/api.py:523] 
+I1120 16:56:47.307000 3209910 torch/distributed/elastic/agent/server/api.py:685] [default] Starting worker group
+I1120 16:56:47.307000 1611534 torch/distributed/elastic/agent/server/local_elastic_agent.py:192] Environment variable 'TORCHELASTIC_ENABLE_FILE_TIMER' not found. Do not start FileTimerServer.
+I1120 16:56:47.307000 3209910 torch/distributed/elastic/agent/server/local_elastic_agent.py:296] use_agent_store: True
+I1120 16:56:47.307000 1611534 torch/distributed/elastic/agent/server/local_elastic_agent.py:236] Environment variable 'TORCHELASTIC_HEALTH_CHECK_PORT' not found. Do not start health check.
+I1120 16:56:47.307000 3209910 torch/distributed/elastic/agent/server/local_elastic_agent.py:192] Environment variable 'TORCHELASTIC_ENABLE_FILE_TIMER' not found. Do not start FileTimerServer.
+I1120 16:56:47.308000 3209910 torch/distributed/elastic/agent/server/local_elastic_agent.py:236] Environment variable 'TORCHELASTIC_HEALTH_CHECK_PORT' not found. Do not start health check.
+Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+Detected kernel version 4.18.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/albumentations/core/validation.py:114: UserWarning: ShiftScaleRotate is a special case of Affine transform. Please use Affine transform instead.
+  original_init(self, **validated_kwargs)
+/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/albumentations/core/validation.py:114: UserWarning: ShiftScaleRotate is a special case of Affine transform. Please use Affine transform instead.
+  original_init(self, **validated_kwargs)
+/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/main/train_ddp.py:175: UserWarning: Argument(s) 'max_holes, max_height, max_width' are not valid for transform CoarseDropout
+  A.CoarseDropout(p=0.1, max_holes=3, max_height=32, max_width=32),
+/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/main/train_ddp.py:175: UserWarning: Argument(s) 'max_holes, max_height, max_width' are not valid for transform CoarseDropout
+  A.CoarseDropout(p=0.1, max_holes=3, max_height=32, max_width=32),
+/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/albumentations/core/validation.py:114: UserWarning: ShiftScaleRotate is a special case of Affine transform. Please use Affine transform instead.
+  original_init(self, **validated_kwargs)
+/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/albumentations/core/validation.py:114: UserWarning: ShiftScaleRotate is a special case of Affine transform. Please use Affine transform instead.
+  original_init(self, **validated_kwargs)
+/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/main/train_ddp.py:175: UserWarning: Argument(s) 'max_holes, max_height, max_width' are not valid for transform CoarseDropout
+  A.CoarseDropout(p=0.1, max_holes=3, max_height=32, max_width=32),
+/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/main/train_ddp.py:175: UserWarning: Argument(s) 'max_holes, max_height, max_width' are not valid for transform CoarseDropout
+  A.CoarseDropout(p=0.1, max_holes=3, max_height=32, max_width=32),
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/main/train_ddp.py", line 211, in <module>
+[rank1]:     scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode='min', factor=0.5, patience=10, min_lr=1e-6, verbose=True)
+[rank1]: TypeError: ReduceLROnPlateau.__init__() got an unexpected keyword argument 'verbose'
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/main/train_ddp.py", line 211, in <module>
+[rank0]:     scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode='min', factor=0.5, patience=10, min_lr=1e-6, verbose=True)
+[rank0]: TypeError: ReduceLROnPlateau.__init__() got an unexpected keyword argument 'verbose'
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/main/train_ddp.py", line 211, in <module>
+[rank1]:     scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode='min', factor=0.5, patience=10, min_lr=1e-6, verbose=True)
+[rank1]: TypeError: ReduceLROnPlateau.__init__() got an unexpected keyword argument 'verbose'
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/main/train_ddp.py", line 211, in <module>
+[rank0]:     scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode='min', factor=0.5, patience=10, min_lr=1e-6, verbose=True)
+[rank0]: TypeError: ReduceLROnPlateau.__init__() got an unexpected keyword argument 'verbose'
+[rank0]:[W1120 16:57:28.640111673 ProcessGroupNCCL.cpp:1538] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+[rank0]:[W1120 16:57:28.730032628 ProcessGroupNCCL.cpp:1538] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+E1120 16:57:38.461000 1611534 torch/distributed/elastic/multiprocessing/api.py:874] failed (exitcode: 1) local_rank: 0 (pid: 1611559) of binary: /home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/bin/python3
+Traceback (most recent call last):
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/bin/accelerate", line 10, in <module>
+    sys.exit(main())
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/accelerate/commands/accelerate_cli.py", line 50, in main
+    args.func(args)
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/accelerate/commands/launch.py", line 1226, in launch_command
+    multi_gpu_launcher(args)
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/accelerate/commands/launch.py", line 853, in multi_gpu_launcher
+    distrib_run.run(args)
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/torch/distributed/run.py", line 892, in run
+    elastic_launch(
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 143, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 277, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+train_ddp.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2025-11-20_16:57:38
+  host      : rpgpu020.iuac.res.in
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 1611560)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-11-20_16:57:38
+  host      : rpgpu020.iuac.res.in
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 1611559)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+E1120 16:57:38.485000 3209910 torch/distributed/elastic/multiprocessing/api.py:874] failed (exitcode: 1) local_rank: 0 (pid: 3209934) of binary: /home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/bin/python3
+Traceback (most recent call last):
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/bin/accelerate", line 10, in <module>
+    sys.exit(main())
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/accelerate/commands/accelerate_cli.py", line 50, in main
+    args.func(args)
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/accelerate/commands/launch.py", line 1226, in launch_command
+    multi_gpu_launcher(args)
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/accelerate/commands/launch.py", line 853, in multi_gpu_launcher
+    distrib_run.run(args)
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/torch/distributed/run.py", line 892, in run
+    elastic_launch(
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 143, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/.venv/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 277, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+train_ddp.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-11-20_16:57:38
+  host      : rpgpu019.iuac.res.in
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 3209934)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: rpgpu019: task 0: Exited with exit code 1
+srun: error: rpgpu020: task 1: Exited with exit code 1

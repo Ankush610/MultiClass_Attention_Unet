@@ -1,0 +1,62 @@
+==========================================
+SLURM_CLUSTER_NAME = paramprabha
+SLURM_JOB_ACCOUNT = cdac
+SLURM_JOB_ID = 318884
+SLURM_JOB_NAME = mnist_code
+SLURM_JOB_NODELIST = rpgpu[019-020]
+SLURM_JOB_USER = omjadhav
+SLURM_JOB_UID = 52009
+SLURM_JOB_PARTITION = gpu
+SLURM_TASK_PID = 3209871
+SLURM_SUBMIT_DIR = /home/omjadhav/ankush/medical_project/Multiclass-Segmentation-in-PyTorch/main
+SLURM_CPUS_ON_NODE = 10
+SLURM_NTASKS = 2
+SLURM_TASK_PID = 3209871
+==========================================
+====================================
+SLURM Job Information
+====================================
+Job Name: mnist_code
+Number of Nodes: 2
+Number of GPUs per Node: 2
+Nodes Array: rpgpu019 rpgpu020
+Head Node: rpgpu019
+Head Node IP: 172.5.3.19
+====================================
+====================================
+Distributed Setup
+====================================
+MASTER_ADDR: 172.5.3.19
+MASTER_PORT: 29900
+WORLD_SIZE: 4
+RANK: 0
+NCCL_IB_DISABLE: 0
+NCCL_DEBUG: INFO
+Connectio MODE : Using InfiniBand (NCCL_IB_ENABLE)
+====================================
+====================================
+Launching Accelerate Training
+====================================
+Found images: 207
+Found masks : 207
+Found images: 207
+Found masks : 207
+Found images: 207
+Found images: 207
+Found masks : 207
+Found masks : 207
+Dataset Size: Train: 166 - Valid: 41
+Dataset Size: Train: 166 - Valid: 41
+Dataset Size: Train: 166 - Valid: 41
+Dataset Size: Train: 166 - Valid: 41
+Device: cuda
+GPU device name: NVIDIA A100 80GB PCIe
+Device: cuda
+GPU device name: NVIDIA A100 80GB PCIe
+Device: cuda
+Device: cuda
+GPU device name: NVIDIA A100 80GB PCIe
+GPU device name: NVIDIA A100 80GB PCIe
+====================================
+Training Completed
+====================================
